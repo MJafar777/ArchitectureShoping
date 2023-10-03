@@ -17,28 +17,7 @@ const Home = () => {
           <Link to="/homepage">Homepage</Link>
         </li>
         <li>
-          <Link to="/shop">Shop</Link>
-        </li>
-        <li>
-          <Link to="/shopdetaildescription">ShopDetailDescription</Link>
-        </li>
-        <li>
-          <Link to="/detailreview">DetailReview</Link>
-        </li>
-        <li>
-          <Link to="/checkout">Checkout</Link>
-        </li>
-        <li>
-          <Link to="/wishlist">Wishlist</Link>
-        </li>
-        <li>
-          <Link to="/team">Team</Link>
-        </li>
-        <li>
-          <Link to="/blog">Blog</Link>
-        </li>
-        <li>
-          <Link to="/blogdetail">BlogDetail</Link>
+          <Link to="">Shop</Link>
         </li>
         <li>
           <Link to="/contactus">Contactus</Link>

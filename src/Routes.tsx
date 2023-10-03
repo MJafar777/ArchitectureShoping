@@ -4,18 +4,8 @@ import Home from "pages/Home";
 import NotFound from "pages/NotFound";
 const Aboutus = React.lazy(() => import("pages/Aboutus"));
 const Contactus = React.lazy(() => import("pages/Contactus"));
-const BlogDetail = React.lazy(() => import("pages/BlogDetail"));
-const Blog = React.lazy(() => import("pages/Blog"));
-const Team = React.lazy(() => import("pages/Team"));
-const Wishlist = React.lazy(() => import("pages/Wishlist"));
-const Checkout = React.lazy(() => import("pages/Checkout"));
-const DetailReview = React.lazy(() => import("pages/DetailReview"));
-const ShopDetailDescription = React.lazy(
-  () => import("pages/ShopDetailDescription")
-);
 const Shop = React.lazy(() => import("pages/Shop"));
 const Homepage = React.lazy(() => import("pages/Homepage"));
-const Cart = React.lazy(() => import("pages/Cart"));
 const ProjectRoutes = () => {
   return (
     <React.Suspense fallback={<>Loading...</>}>
