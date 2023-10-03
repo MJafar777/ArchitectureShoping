@@ -43,7 +43,7 @@ const HomepageCardproduct: React.FC<HomepageCardproductProps> = (props) => {
             ) : null}
           </div> */}
         </div>
-        <div className="flex flex-row items-center justify-between w-full">
+        {/* <div className="flex flex-row items-center justify-between w-full">
           <Text
             className="text-black-900 text-xl tracking-[-0.50px] w-auto"
             size="txtRalewaySemiBold20"
@@ -56,7 +56,7 @@ const HomepageCardproduct: React.FC<HomepageCardproductProps> = (props) => {
           >
             {props?.twentyfour}
           </Text>
-        </div>
+        </div> */}
       </div>
     </>
   );

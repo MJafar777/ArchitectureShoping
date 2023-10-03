@@ -85,12 +85,12 @@ const ShopPage: React.FC = () => {
                 />
                 <div className="absolute flex flex-col gap-[30px] h-max inset-y-[0] items-start justify-start left-[5%] my-auto w-auto">
                   <div className="flex flex-col gap-4 items-start justify-start w-full">
-                    <Text
+                    {/* <Text
                       className="text-lg text-yellow-100 tracking-[-0.50px] w-auto"
                       size="txtRubikSemiBold18Yellow100"
                     >
                       Best Room Decor Items
-                    </Text>
+                    </Text> */}
                     <Text
                       className="leading-[60.00px] max-w-[465px] md:max-w-full text-4xl sm:text-[32px] md:text-[34px] text-white-A700 tracking-[-0.50px]"
                       size="txtRalewayRomanBold36"
@@ -268,7 +268,7 @@ const ShopPage: React.FC = () => {
               </div>
             </div> */}
             <div className="flex flex-1 flex-col font-rubik gap-[50px] items-center justify-start w-full">
-              <div className="flex sm:flex-col flex-row sm:gap-10 items-center justify-between w-full">
+              {/* <div className="flex sm:flex-col flex-row sm:gap-10 items-center justify-between w-full">
                 <div className="flex sm:flex-1 flex-col font-rubik items-start justify-start w-[407px] sm:w-full">
                   <div className="flex sm:flex-col flex-row sm:gap-5 items-start justify-start w-full">
                     <div className="flex sm:flex-1 flex-col items-center justify-start w-[74%] sm:w-full">
@@ -300,7 +300,7 @@ const ShopPage: React.FC = () => {
                   isSearchable={false}
                   placeholder="Sort By"
                 />
-              </div>
+              </div> */}
 
               {/* ////////// */}
               <div className="flex flex-col items-center justify-start w-full">
