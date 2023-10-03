@@ -32,6 +32,16 @@ const ShopPage: React.FC = () => {
       teakwoodchair: "house building",
       twentyfour: "$330.000",
     },
+
+    {
+      image: "images/products/second/Frame 13.png",
+    },
+    {
+      image: "images/products/second/Frame 14.png",
+    },
+    {
+      image: "images/products/second/Frame 15.png",
+    },
     {
       image: "images/products/3.png",
       category: "2x Rooms",
@@ -49,6 +59,15 @@ const ShopPage: React.FC = () => {
       category: "Rooms building",
       teakwoodchair: "house building",
       twentyfour: "$108.000",
+    },
+    {
+      image: "images/products/second/Frame 16.png",
+    },
+    {
+      image: "images/products/second/Frame 17.png",
+    },
+    {
+      image: "images/products/second/Frame 18.png",
     },
     {
       image: "images/products/6.png",
@@ -80,27 +99,19 @@ const ShopPage: React.FC = () => {
               <div className="h-[450px] relative w-full">
                 <Img
                   className="h-[450px] m-auto object-cover w-full"
-                  src="images/img_rectangle28.png"
+                  // src="images/img_rectangle28.png"
+                  src="images/products/bgImg.png"
                   alt="rectangleTwentyEight"
                 />
-                <div className="absolute flex flex-col gap-[30px] h-max inset-y-[0] items-start justify-start left-[5%] my-auto w-auto">
-                  <div className="flex flex-col gap-4 items-start justify-start w-full">
-                    {/* <Text
-                      className="text-lg text-yellow-100 tracking-[-0.50px] w-auto"
-                      size="txtRubikSemiBold18Yellow100"
-                    >
-                      Best Room Decor Items
-                    </Text> */}
-                    <Text
-                      className="leading-[60.00px] max-w-[465px] md:max-w-full text-4xl sm:text-[32px] md:text-[34px] text-white-A700 tracking-[-0.50px]"
-                      size="txtRalewayRomanBold36"
-                    >
-                      Our goods have the best quality and materials in the world
-                    </Text>
-                  </div>
-                  <Button className="bg-yellow-100 cursor-pointer font-bold leading-[normal] min-w-[170px] py-[15px] text-bluegray-900 text-center text-xl tracking-[-0.50px]">
-                    Shop Now
-                  </Button>
+                <div className="absolute flex flex-col  h-max inset-y-[0] items-start justify-start  my-auto w-full bg-opacity-23 backdrop-blur-[6.3px] border-opacity-30 border-white rounded-[16px] shadow-lg">
+                  {/* <div className="flex flex-col gap-4 align-center  w-full items-center justify-center h-screen"> */}
+                  <Text
+                    className="leading-[60.00px] w-full  text-4xl  text-white-A700 tracking-[-0.50px] text-center "
+                    size="txtRalewayRomanBold36"
+                  >
+                    Our Products
+                  </Text>
+                  {/* </div> */}
                 </div>
               </div>
             </div>
