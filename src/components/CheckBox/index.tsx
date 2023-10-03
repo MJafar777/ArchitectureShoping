@@ -29,13 +29,10 @@ const CheckBox = React.forwardRef<HTMLInputElement, CheckboxProps>(
       errors = [],
       id = "checkbox_id",
       onChange,
-      shape = "",
-      size = "",
-      variant = "",
-      color = "",
+
       ...restProps
     },
-    ref,
+    ref
   ) => {
     const handleChange: React.ChangeEventHandler<HTMLInputElement> = (e) => {
       if (onChange) onChange(e?.target?.checked);
@@ -59,7 +56,7 @@ const CheckBox = React.forwardRef<HTMLInputElement, CheckboxProps>(
         {children}
       </>
     );
-  },
+  }
 );
 
 export { CheckBox };

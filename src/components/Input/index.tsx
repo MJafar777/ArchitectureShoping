@@ -35,13 +35,10 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       prefix,
       suffix,
       onChange,
-      shape = "",
-      size = "",
-      variant = "",
-      color = "",
+
       ...restProps
     },
-    ref,
+    ref
   ) => {
     const handleChange: React.ChangeEventHandler<HTMLInputElement> = (e) => {
       if (onChange) onChange(e?.target?.value);
@@ -71,7 +68,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         {!!errors && <ErrorMessage errors={errors} />}
       </>
     );
-  },
+  }
 );
 
 export { Input };

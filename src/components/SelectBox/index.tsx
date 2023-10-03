@@ -33,13 +33,10 @@ const SelectBox = React.forwardRef<any, SelectProps>(
       value = "",
       errors = [],
       indicator,
-      shape = "",
-      size = "",
-      variant = "",
-      color = "",
+
       ...restProps
     },
-    ref,
+    ref
   ) => {
     const [selectedVal, setSelectedVal] = React.useState(value);
 
@@ -130,7 +127,7 @@ const SelectBox = React.forwardRef<any, SelectProps>(
         {children}
       </>
     );
-  },
+  }
 );
 
 export { SelectBox };

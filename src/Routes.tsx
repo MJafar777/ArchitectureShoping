@@ -11,7 +11,7 @@ const Wishlist = React.lazy(() => import("pages/Wishlist"));
 const Checkout = React.lazy(() => import("pages/Checkout"));
 const DetailReview = React.lazy(() => import("pages/DetailReview"));
 const ShopDetailDescription = React.lazy(
-  () => import("pages/ShopDetailDescription"),
+  () => import("pages/ShopDetailDescription")
 );
 const Shop = React.lazy(() => import("pages/Shop"));
 const Homepage = React.lazy(() => import("pages/Homepage"));
@@ -21,9 +21,8 @@ const ProjectRoutes = () => {
     <React.Suspense fallback={<>Loading...</>}>
       <Router>
         <Routes>
-          <Route path="/" element={<Cart />} />
+          <Route path="/" element={<Homepage />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="/homepage" element={<Homepage />} />
           <Route path="/shop" element={<Shop />} />
           <Route
             path="/shopdetaildescription"

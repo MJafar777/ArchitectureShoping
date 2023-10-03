@@ -20,10 +20,7 @@ const Button: React.FC<React.PropsWithChildren<ButtonProps>> = ({
   className = "",
   leftIcon,
   rightIcon,
-  shape = "",
-  size = "",
-  variant = "",
-  color = "",
+
   ...restProps
 }) => {
   return (

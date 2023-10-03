@@ -8,12 +8,6 @@ type HeaderProps = React.DetailedHTMLProps<
 > &
   Partial<{}>;
 
-const homeOptionsList = [
-  { label: "Option1", value: "option1" },
-  { label: "Option2", value: "option2" },
-  { label: "Option3", value: "option3" },
-];
-
 const Header: React.FC<HeaderProps> = (props) => {
   return (
     <>
@@ -44,7 +38,7 @@ const Header: React.FC<HeaderProps> = (props) => {
               }
               isMulti={false}
               name="frameFour"
-              options={homeOptionsList}
+              // options={homeOptionsList}
               isSearchable={false}
               placeholder="Home"
             />
@@ -76,14 +70,9 @@ const Header: React.FC<HeaderProps> = (props) => {
               className="text-black-900 text-lg tracking-[-0.50px] w-auto"
               size="txtRubikRomanRegular18"
             >
-              Team
+              Team Team
             </Text>
           </div>
-          <Img
-            className="h-6 sm:hidden w-[132px]"
-            src="images/img_icon.svg"
-            alt="icon"
-          />
         </div>
       </header>
     </>
