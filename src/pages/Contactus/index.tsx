@@ -1,37 +1,22 @@
 import React from "react";
 
-import {
-  Accordion,
-  AccordionItem,
-  AccordionItemButton,
-  AccordionItemHeading,
-  AccordionItemPanel,
-  AccordionItemState,
-} from "react-accessible-accordion";
-
-import { Button, Img, Input, Line, SelectBox, Text } from "components";
+import { Button, Img, Input, Text } from "components";
 import CartColumnframe48095972 from "components/CartColumnframe48095972";
 import Footer from "components/Footer";
 import Header from "components/Header";
-
-const homeOptionsList = [
-  { label: "Option1", value: "option1" },
-  { label: "Option2", value: "option2" },
-  { label: "Option3", value: "option3" },
-];
 
 const ContactusPage: React.FC = () => {
   return (
     <>
       <div className="bg-gray-50 flex flex-col font-rubik  gap-[100px] items-start justify-start mx-auto w-auto sm:w-full md:w-full">
         <div className="flex flex-col ap-[75px] items-start justify-start w-full">
-          <Header className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[35px] w-full" />
-          <div className="flex flex-col font-poppins items-start justify-start md:px-10 sm:px-5 px-[75px] w-full">
+          <Header className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[10px] w-full" />
+          <div className="flex flex-col font-poppins items-start justify-start  w-full">
             <div className="flex flex-col items-start justify-start max-w-[1291px] mx-auto w-full">
-              <div className="h-full relative w-full">
+              <div className="h-[645px] relative w-full">
                 <Img
                   className="h-full m-auto object-cover w-full"
-                  src="images/a1.jpg"
+                  src="images/a2.jpg"
                   alt="rectangleTwentyEight"
                 />
               </div>
