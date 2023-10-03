@@ -24,11 +24,12 @@ const HomepageCardproduct: React.FC<HomepageCardproductProps> = (props) => {
             className="absolute h-[400px] inset-[0] justify-center m-auto object-cover w-full"
             alt="image"
             src={`${props.image}`}
+            // src="../../assets/images/products/1.jpg"
           />
           {/* <Button className="absolute bg-bluegray-900 bottom-[4%] cursor-pointer font-rubik leading-[normal] left-[5%] py-[9px] text-center text-sm text-white-A700 tracking-[-0.50px] w-[106px]">
             {props?.category}
-          </Button> */}
-          <div className="absolute flex flex-col md:gap-10 gap-[106px] items-center justify-start right-[5%] top-[4%] w-auto">
+          </Button>
+          {/* <div className="absolute flex flex-col md:gap-10 gap-[106px] items-center justify-start right-[5%] top-[4%] w-auto">
             {!!props?.status ? (
               <Text
                 className="bg-red-A200 justify-center px-[7px] text-sm text-white-A700 tracking-[-0.50px] w-auto"
@@ -40,7 +41,7 @@ const HomepageCardproduct: React.FC<HomepageCardproductProps> = (props) => {
             {!!props?.save ? (
               <Img className="h-[100px] w-10" alt="save" src="props?.save" />
             ) : null}
-          </div>
+          </div> */}
         </div>
         <div className="flex flex-row items-center justify-between w-full">
           <Text
@@ -62,10 +63,10 @@ const HomepageCardproduct: React.FC<HomepageCardproductProps> = (props) => {
 };
 
 HomepageCardproduct.defaultProps = {
-  image: "images/img_image.png",
-  category: "Living Room",
-  teakwoodchair: "Teak wood chair",
-  twentyfour: "$24",
+  image: "images/products/7.png",
+  category: "Rooms building",
+  teakwoodchair: "house building",
+  twentyfour: "$120.000",
 };
 
 export default HomepageCardproduct;
