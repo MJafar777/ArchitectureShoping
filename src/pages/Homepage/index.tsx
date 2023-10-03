@@ -2,17 +2,7 @@ import React from "react";
 
 import { useNavigate } from "react-router-dom";
 
-import {
-  Button,
-  Img,
-  Input,
-  Line,
-  List,
-  PagerIndicator,
-  SelectBox,
-  Slider,
-  Text,
-} from "components";
+import { Button, Img, List, PagerIndicator, Slider, Text } from "components";
 import CartColumnframe48095972 from "components/CartColumnframe48095972";
 import CartNavbar from "components/CartNavbar";
 import CartSectionfooter from "components/CartSectionfooter";
@@ -91,48 +81,7 @@ const HomepagePage: React.FC = () => {
             </div>
           </div>
         </div>
-        {/* <div className="bg-black-900 flex flex-col items-center justify-center md:px-10 sm:px-5 px-[173px] py-[41px] w-full">
-          <div className="flex flex-col gap-[46px] items-center justify-start max-w-[1094px] mx-auto w-full">
-            <Text
-              className="text-center text-gray-53 text-xl tracking-[-0.50px] w-full"
-              size="txtRubikRegular20"
-            >
-              Various brands have used our products
-            </Text>
-            <div className="flex md:flex-col flex-row md:gap-[50px] items-center justify-between w-full">
-              <Img
-                className="h-12 w-[220px]"
-                src="images/img_search.svg"
-                alt="search"
-              />
-              <Img
-                className="h-12 w-[125px]"
-                src="images/img_companylogocompany109_gray_53.svg"
-                alt="companylogocomp"
-              />
-              <Img
-                className="h-12 w-[92px]"
-                src="images/img_companylogocompany109.svg"
-                alt="companylogocomp_One"
-              />
-              <Img
-                className="h-12 w-[141px]"
-                src="images/img_companylogocompany109_gray_53_48x141.svg"
-                alt="companylogocomp_Two"
-              />
-              <Img
-                className="h-12 w-[134px]"
-                src="images/img_companylogocompany109_gray_53_48x134.svg"
-                alt="companylogocomp_Three"
-              />
-              <Img
-                className="h-12 w-[132px]"
-                src="images/img_companylogocompany109_gray_53_48x132.svg"
-                alt="companylogocomp_Four"
-              />
-            </div>
-          </div>
-        </div> */}
+
         <div className="flex flex-col items-center justify-center md:px-10 sm:px-5 px-[75px] w-full">
           <List
             className="sm:flex-col flex-row gap-5 grid md:grid-cols-1 grid-cols-2 justify-center max-w-[1290px] mx-auto w-full"
@@ -140,36 +89,50 @@ const HomepagePage: React.FC = () => {
           >
             <div className="bg-gradient  flex flex-1 flex-col items-start justify-start sm:px-5 px-[30px] py-6 w-full">
               <div className="flex sm:flex-col flex-row sm:gap-10 gap-[76px] items-center justify-start w-full">
-                <div className="flex flex-1 flex-col gap-6 items-start justify-start w-full">
-                  <div className="flex flex-col gap-[31px] items-start justify-start w-full">
-                    <Text
-                      className="text-gray-53 text-lg tracking-[-0.50px] w-full"
-                      size="txtRubikRegular18Gray53"
-                    >
-                      Living Room
-                    </Text>
-                    <Text
-                      className="md:max-w-full max-w-xs text-4xl sm:text-[32px] md:text-[34px] text-gray-53 tracking-[-0.50px]"
-                      size="txtRalewayBold36"
-                    >
-                      The best foam padded chair
-                    </Text>
-                  </div>
+                {/* <div className="flex flex-1 flex-col gap-6 items-start justify-start w-full">
                   <Button
                     className="common-pointer border-2 border-gray-50 border-solid cursor-pointer font-medium leading-[normal] min-w-[155px] py-[15px] text-base text-center text-gray-50 tracking-[-0.50px]"
-                    onClick={() => navigate("/shop")}
+                    onClick={() => navigate("/products")}
                   >
                     Shop Now
                   </Button>
-                </div>
+                </div> */}
                 <Img
-                  className="h-[301px] md:h-auto max-h-[301px] object-cover sm:w-[]"
-                  src="images/img_sammoghadamkh.png"
+                  // className="h-[301px] md:h-auto max-h-[301px] object-cover sm:w-[]"
+                  src="images/hasTwoRoom.jpg"
                   alt="sammoghadamkh"
+                  style={{ width: "100%" }}
                 />
               </div>
             </div>
-            <div className="bg-gradient  flex flex-1 flex-col items-center justify-center sm:px-5 px-[30px] py-6 w-full">
+            <div className="bg-gradient  flex flex-1 flex-col items-start justify-start sm:px-5 px-[30px] py-6 w-full">
+              <div className="flex sm:flex-col flex-row sm:gap-10 gap-[76px] items-center justify-start w-full">
+                <Img
+                  src="images/hasThreeRoom.jpg"
+                  alt="sammoghadamkh"
+                  style={{ width: "100%" }}
+                />
+              </div>
+            </div>
+            <div className="bg-gradient  flex flex-1 flex-col items-start justify-start sm:px-5 px-[30px] py-6 w-full">
+              <div className="flex sm:flex-col flex-row sm:gap-10 gap-[76px] items-center justify-start w-full">
+                <Img
+                  src="images/hasFourRoom.jpg"
+                  alt="sammoghadamkh"
+                  style={{ width: "100%" }}
+                />
+              </div>
+            </div>
+            <div className="bg-gradient  flex flex-1 flex-col items-start justify-start sm:px-5 px-[30px] py-6 w-full">
+              <div className="flex sm:flex-col flex-row sm:gap-10 gap-[76px] items-center justify-start w-full">
+                <Img
+                  src="images/hasAllRoom.jpg"
+                  alt="sammoghadamkh"
+                  style={{ width: "100%" }}
+                />
+              </div>
+            </div>
+            {/* <div className="bg-gradient  flex flex-1 flex-col items-center justify-center sm:px-5 px-[30px] py-6 w-full">
               <div className="flex sm:flex-col flex-row sm:gap-10 gap-[79px] h-[301px] md:h-auto items-center justify-start w-full">
                 <div className="flex flex-1 flex-col gap-6 items-start justify-start w-full">
                   <div className="flex flex-col gap-[31px] items-start justify-start w-full">
@@ -188,7 +151,7 @@ const HomepagePage: React.FC = () => {
                   </div>
                   <Button
                     className="common-pointer border-2 border-gray-50 border-solid cursor-pointer font-medium leading-[normal] min-w-[155px] py-[15px] text-base text-center text-gray-50 tracking-[-0.50px]"
-                    onClick={() => navigate("/shop")}
+                    onClick={() => navigate("/products")}
                   >
                     Shop Now
                   </Button>
@@ -199,7 +162,7 @@ const HomepagePage: React.FC = () => {
                   alt="phildesforges"
                 />
               </div>
-            </div>
+            </div> */}
           </List>
         </div>
         <div className="flex flex-col items-center justify-start md:px-10 sm:px-5 px-[75px] w-full">
@@ -248,48 +211,30 @@ const HomepagePage: React.FC = () => {
                     className="flex flex-col gap-[47px] items-center mx-2.5"
                     orientation="vertical"
                   >
-                    <div className="gap-[19px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 items-start justify-start w-full">
+                    <div className="gap-[19px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 items-start justify-start w-full">
                       <HomepageCardproduct
                         className="flex flex-1 flex-col gap-4 items-start justify-start w-full"
-                        status="New"
-                        save="images/img_save.svg"
+                        image="images/a4.jpg"
                       />
                       <HomepageCardproduct
                         className="flex flex-1 flex-col gap-4 items-start justify-start w-full"
-                        image="images/img_image_400x308.png"
-                        status="New"
+                        image="images/a3.jpg"
                       />
                       <HomepageCardproduct
                         className="flex flex-1 flex-col gap-4 items-start justify-start w-full"
-                        image="images/img_image_1.jpg"
-                        status="New"
+                        image="images/a2.jpg"
                       />
                       <HomepageCardproduct
                         className="flex flex-1 flex-col gap-4 items-start justify-start w-full"
-                        image="images/img_image_2.png"
-                        status="New"
-                      />
-                    </div>
-                    <div className="gap-[19px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 items-start justify-start w-full">
-                      <HomepageCardproduct
-                        className="flex flex-1 flex-col gap-4 items-start justify-start w-full"
-                        image="images/img_image_3.png"
-                        status="New"
+                        image="images/a1.jpg"
                       />
                       <HomepageCardproduct
                         className="flex flex-1 flex-col gap-4 items-start justify-start w-full"
-                        image="images/img_image_4.png"
-                        status="New"
+                        image="images/a6.jpg"
                       />
                       <HomepageCardproduct
                         className="flex flex-1 flex-col gap-4 items-start justify-start w-full"
-                        image="images/img_image_5.png"
-                        status="New"
-                      />
-                      <HomepageCardproduct
-                        className="flex flex-1 flex-col gap-4 items-start justify-start w-full"
-                        image="images/img_image_6.png"
-                        status="New"
+                        image="images/a5.jpg"
                       />
                     </div>
                   </List>
