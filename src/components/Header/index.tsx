@@ -17,8 +17,9 @@ const Header: React.FC<HeaderProps> = (props) => {
           <div className="header-row ">
             <Link to="/">
               <Img
-                className="h-[30px] w-[90px]"
-                src="images/img_car.svg"
+                src="images/logo.png"
+                width={70}
+                height={70}
                 alt="car"
               />
             </Link>
