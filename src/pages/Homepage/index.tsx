@@ -18,7 +18,6 @@ import CartNavbar from "components/CartNavbar";
 import CartSectionfooter from "components/CartSectionfooter";
 import HomepageCardblog from "components/HomepageCardblog";
 import HomepageCardproduct from "components/HomepageCardproduct";
-
 const homeOptionsList = [
   { label: "Option1", value: "option1" },
   { label: "Option2", value: "option2" },
@@ -31,19 +30,19 @@ const HomepagePage: React.FC = () => {
   const sliderRef = React.useRef(null);
   const [sliderState, setsliderState] = React.useState(0);
   const homepageCardproductPropList = [
-    { save: "images/img_save.svg" },
-    { image: "images/img_image_7.png" },
-    { image: "images/img_image_8.png" },
-    { image: "images/img_image_9.png" },
-    { image: "images/img_image_10.png" },
-    { image: "images/img_image_11.png" },
-    { image: "images/img_image_12.png" },
-    { image: "images/img_image_13.png" },
+    { save: "../../../public/images/img_save.svg" },
+    { image: "../../../public/images/img_image_7.png" },
+    { image: "../../../public/images/img_image_8.png" },
+    { image: "../../../public/images/img_image_9.png" },
+    { image: "../../../public/images/img_image_10.png" },
+    { image: "../../../public/images/img_image_11.png" },
+    { image: "../../../public/images/img_image_12.png" },
+    { image: "../../../public/images/img_image_13.png" },
   ];
   const homepageCardblogPropList = [
     {},
-    { rectangleeighteen: "images/img_rectangle18_400x416.png" },
-    { rectangleeighteen: "images/img_rectangle18_1.png" },
+    { rectangleeighteen: "../../../public/images/img_rectangle18_400x416.png" },
+    { rectangleeighteen: "../../../public/images/img_rectangle18_1.png" },
   ];
 
   return (
@@ -92,7 +91,7 @@ const HomepagePage: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="bg-black-900 flex flex-col items-center justify-center md:px-10 sm:px-5 px-[173px] py-[41px] w-full">
+        {/* <div className="bg-black-900 flex flex-col items-center justify-center md:px-10 sm:px-5 px-[173px] py-[41px] w-full">
           <div className="flex flex-col gap-[46px] items-center justify-start max-w-[1094px] mx-auto w-full">
             <Text
               className="text-center text-gray-53 text-xl tracking-[-0.50px] w-full"
@@ -133,7 +132,7 @@ const HomepagePage: React.FC = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="flex flex-col items-center justify-center md:px-10 sm:px-5 px-[75px] w-full">
           <List
             className="sm:flex-col flex-row gap-5 grid md:grid-cols-1 grid-cols-2 justify-center max-w-[1290px] mx-auto w-full"
@@ -262,7 +261,7 @@ const HomepagePage: React.FC = () => {
                       />
                       <HomepageCardproduct
                         className="flex flex-1 flex-col gap-4 items-start justify-start w-full"
-                        image="images/img_image_1.png"
+                        image="images/img_image_1.jpg"
                         status="New"
                       />
                       <HomepageCardproduct

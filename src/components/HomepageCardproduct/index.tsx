@@ -23,7 +23,7 @@ const HomepageCardproduct: React.FC<HomepageCardproductProps> = (props) => {
           <Img
             className="absolute h-[400px] inset-[0] justify-center m-auto object-cover w-full"
             alt="image"
-            src="props?.image"
+            src={`${props.image}`}
           />
           <Button className="absolute bg-bluegray-900 bottom-[4%] cursor-pointer font-rubik leading-[normal] left-[5%] py-[9px] text-center text-sm text-white-A700 tracking-[-0.50px] w-[106px]">
             {props?.category}

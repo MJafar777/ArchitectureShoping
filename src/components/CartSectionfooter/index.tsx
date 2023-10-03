@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Button, Img, Text } from "components";
+import { Link } from "react-router-dom";
 
 type CartSectionfooterProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLDivElement>,
@@ -19,7 +20,7 @@ const CartSectionfooter: React.FC<CartSectionfooterProps> = (props) => {
                 className="md:text-3xl sm:text-[28px] text-[32px] text-gray-53 tracking-[-0.50px] w-auto"
                 size="txtRalewayRomanBold32Gray53"
               >
-                Furnit.
+                <Link to="/">Furnit.</Link>
               </Text>
               <Text
                 className="leading-[35.00px] max-w-[360px] md:max-w-full text-base text-gray-50_a3 tracking-[-0.50px]"
