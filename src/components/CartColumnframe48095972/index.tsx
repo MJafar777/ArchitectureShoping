@@ -13,7 +13,7 @@ type CartColumnframe48095972Props = Omit<
   }>;
 
 const CartColumnframe48095972: React.FC<CartColumnframe48095972Props> = (
-  props,
+  props
 ) => {
   return (
     <>
@@ -58,13 +58,8 @@ const CartColumnframe48095972: React.FC<CartColumnframe48095972Props> = (
 };
 
 CartColumnframe48095972.defaultProps = {
-  offer: "Subscribe now and get 10% off all items",
-  description: (
-    <>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry&#39;s standard dummy text.
-    </>
-  ),
+  offer: "Подпишись сейчас",
+  description: <></>,
   subscribe: "Subscribe",
 };
 
