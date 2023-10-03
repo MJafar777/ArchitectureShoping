@@ -22,21 +22,10 @@ const ProjectRoutes = () => {
       <Router>
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="*" element={<NotFound />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route
-            path="/shopdetaildescription"
-            element={<ShopDetailDescription />}
-          />
-          <Route path="/detailreview" element={<DetailReview />} />
-          <Route path="/checkout" element={<Checkout />} />
-          <Route path="/wishlist" element={<Wishlist />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blogdetail" element={<BlogDetail />} />
-          <Route path="/contactus" element={<Contactus />} />
+          <Route path="/products" element={<Shop />} />
           <Route path="/aboutus" element={<Aboutus />} />
-          <Route path="/dhiwise-dashboard" element={<Home />} />
+          <Route path="/contactus" element={<Contactus />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
     </React.Suspense>
