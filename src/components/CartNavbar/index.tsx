@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Img, SelectBox, Text } from "components";
+import { Link } from "react-router-dom";
 
 type CartNavbarProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLDivElement>,
@@ -20,11 +21,10 @@ const CartNavbar: React.FC<CartNavbarProps> = (props) => {
       <header className={props.className}>
         <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between w-full">
           <div className="header-row ">
-            <Img
-              className="h-[30px] w-[90px]"
-              src="images/img_car.svg"
-              alt="car"
-            />
+            <Link to="/">
+              <Img src="images/logo.png" alt="car" width={70} height={70} />
+            </Link>
+
             <div className="mobile-menu">
               <div></div>
               <div></div>
@@ -36,37 +36,26 @@ const CartNavbar: React.FC<CartNavbarProps> = (props) => {
               className="text-black-900 text-lg tracking-[-0.50px] w-auto"
               size="txtRubikRomanRegular18"
             >
-              Home
+              <Link to="/">Home</Link>
             </Text>
             <Text
               className="text-black-900 text-lg tracking-[-0.50px] w-auto"
               size="txtRubikRomanRegular18"
             >
-              Shop
+              <Link to={"/products"}>Shop</Link>
+            </Text>
+
+            <Text
+              className="text-black-900 text-lg tracking-[-0.50px] w-auto"
+              size="txtRubikRomanRegular18"
+            >
+              <Link to="/aboutus">About</Link>
             </Text>
             <Text
               className="text-black-900 text-lg tracking-[-0.50px] w-auto"
               size="txtRubikRomanRegular18"
             >
-              Blog
-            </Text>
-            <Text
-              className="text-black-900 text-lg tracking-[-0.50px] w-auto"
-              size="txtRubikRomanRegular18"
-            >
-              About
-            </Text>
-            <Text
-              className="text-black-900 text-lg tracking-[-0.50px] w-auto"
-              size="txtRubikRomanRegular18"
-            >
-              Contact
-            </Text>
-            <Text
-              className="text-black-900 text-lg tracking-[-0.50px] w-auto"
-              size="txtRubikRomanRegular18"
-            >
-              Team
+              <Link to="/contactus">Contact</Link>
             </Text>
           </div>
           <div></div>
