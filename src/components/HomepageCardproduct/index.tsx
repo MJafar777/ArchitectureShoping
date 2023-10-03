@@ -26,7 +26,7 @@ const HomepageCardproduct: React.FC<HomepageCardproductProps> = (props) => {
             src={`${props.image}`}
             // src="../../assets/images/products/1.jpg"
           />
-          <Button className="absolute bg-bluegray-900 bottom-[4%] cursor-pointer font-rubik leading-[normal] left-[5%] py-[9px] text-center text-sm text-white-A700 tracking-[-0.50px] w-[106px]">
+          {/* <Button className="absolute bg-bluegray-900 bottom-[4%] cursor-pointer font-rubik leading-[normal] left-[5%] py-[9px] text-center text-sm text-white-A700 tracking-[-0.50px] w-[106px]">
             {props?.category}
           </Button>
           {/* <div className="absolute flex flex-col md:gap-10 gap-[106px] items-center justify-start right-[5%] top-[4%] w-auto">
@@ -48,13 +48,13 @@ const HomepageCardproduct: React.FC<HomepageCardproductProps> = (props) => {
             className="text-black-900 text-xl tracking-[-0.50px] w-auto"
             size="txtRalewaySemiBold20"
           >
-            {props?.teakwoodchair}
+             {props?.teakwoodchair} 
           </Text>
           <Text
             className="text-bluegray-900 text-lg tracking-[-0.50px] w-auto"
             size="txtRubikRegular18Bluegray900"
           >
-            {props?.twentyfour}
+            {props?.twentyfour} 
           </Text>
         </div> */}
       </div>
