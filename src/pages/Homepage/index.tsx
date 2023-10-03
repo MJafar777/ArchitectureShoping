@@ -7,6 +7,7 @@ import CartColumnframe48095972 from "components/CartColumnframe48095972";
 import CartNavbar from "components/CartNavbar";
 import CartSectionfooter from "components/CartSectionfooter";
 import HomepageCardblog from "components/HomepageCardblog";
+// import bgHome from '../../../public/images'
 import HomepageCardproduct from "components/HomepageCardproduct";
 const homeOptionsList = [
   { label: "Option1", value: "option1" },
@@ -19,20 +20,71 @@ const HomepagePage: React.FC = () => {
 
   const sliderRef = React.useRef(null);
   const [sliderState, setsliderState] = React.useState(0);
+  // const homepageCardproductPropList = [
+  //   { save: "images/products/img_save.svg" },
+  //   { image: "images/products/img_image_7.png" },
+  //   { image: "images/products/img_image_8.png" },
+  //   { image: "images/products/img_image_9.png" },
+  //   { image: "images/products/img_image_10.png" },
+  //   { image: "images/products/img_image_11.png" },
+  //   { image: "images/products/img_image_12.png" },
+  //   { image: "images/products/img_image_13.png" },
+  // ];
   const homepageCardproductPropList = [
-    { save: "../../../public/images/img_save.svg" },
-    { image: "../../../public/images/img_image_7.png" },
-    { image: "../../../public/images/img_image_8.png" },
-    { image: "../../../public/images/img_image_9.png" },
-    { image: "../../../public/images/img_image_10.png" },
-    { image: "../../../public/images/img_image_11.png" },
-    { image: "../../../public/images/img_image_12.png" },
-    { image: "../../../public/images/img_image_13.png" },
+    { save: "images/products/5.png", status: "New" },
+    {
+      image: "images/products/1.png",
+      category: "4x Rooms",
+      teakwoodchair: "house building",
+      twentyfour: "$220.000",
+    },
+    {
+      image: "images/products/2.png",
+      category: "4x Rooms",
+      teakwoodchair: "house building",
+      twentyfour: "$330.000",
+    },
+    {
+      image: "images/products/3.png",
+      category: "2x Rooms",
+      teakwoodchair: "house building",
+      twentyfour: "$260.000",
+    },
+    {
+      image: "images/products/4.png",
+      category: "6x Rooms",
+      teakwoodchair: "house building",
+      twentyfour: "$280.000",
+    },
+    {
+      image: "images/products/5.png",
+      category: "Rooms building",
+      teakwoodchair: "house building",
+      twentyfour: "$108.000",
+    },
+    {
+      image: "images/products/6.png",
+      category: "Rooms building",
+      teakwoodchair: "house building",
+      twentyfour: "$162.000",
+    },
+    {
+      image: "images/products/7.png",
+      category: "Rooms building",
+      teakwoodchair: "house building",
+      twentyfour: "$120.000",
+    },
+    {
+      image: "images/products/2.png",
+      category: "Rooms building",
+      teakwoodchair: "house building",
+      twentyfour: "$189.000",
+    },
   ];
   const homepageCardblogPropList = [
     {},
-    { rectangleeighteen: "../../../public/images/img_rectangle18_400x416.png" },
-    { rectangleeighteen: "../../../public/images/img_rectangle18_1.png" },
+    { rectangleeighteen: "images/bgHomeHeader.jpg" },
+    { rectangleeighteen: "images/img_rectangle18_1.png" },
   ];
 
   return (
@@ -40,13 +92,25 @@ const HomepagePage: React.FC = () => {
       <div className="bg-gray-50 flex flex-col font-rubik sm:gap-10 md:gap-10 gap-[100px] items-center justify-start mx-auto w-auto sm:w-full md:w-full">
         <div className="flex flex-col items-start justify-start w-full">
           <CartNavbar className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[35px] w-full" />
-          <div className="bg-orange-50 flex flex-col items-start justify-start md:px-10 sm:px-5 px-[75px] py-20 w-full">
+          <div
+            style={{
+              backgroundImage: `url(${"images/bgHomeHeader.jpg"})`,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              height: "85vh",
+            }}
+            className="bg-orange-50 flex flex-col items-start justify-start md:px-10 sm:px-5 px-[75px] py-20 w-full"
+          >
             <div className="flex md:flex-col flex-row md:gap-10 gap-[60px] items-center justify-start max-w-[1290px] mx-auto w-full">
-              <div className="flex flex-1 flex-col gap-[30px] items-start justify-start w-full">
+              <div
+                style={{ backgroundColor: "#00000074", padding: "20px" }}
+                className="flex flex-1 flex-col gap-[30px] items-start justify-start w-full"
+              >
                 <div className="flex flex-col gap-[26px] items-start justify-start w-full">
                   <Text
-                    className="text-black-900 text-xl tracking-[-0.50px] w-full"
+                    className=" text-xl tracking-[-0.50px] w-full"
                     size="txtRubikRomanRegular20"
+                    style={{ color: "white" }}
                   >
                     Interior Needs
                   </Text>
@@ -54,30 +118,40 @@ const HomepagePage: React.FC = () => {
                     className="leading-[60.00px] max-w-[615px] md:max-w-full sm:text-4xl md:text-[38px] text-[40px] text-black-900 tracking-[-0.50px]"
                     size="txtPollerOneRegular40"
                   >
-                    <span className="text-black-900 font-raleway text-left font-bold">
+                    <span
+                      style={{ color: "white" }}
+                      className="text-black-900 font-raleway text-left font-bold"
+                    >
                       Various{" "}
                     </span>
-                    <span className="text-bluegray-900 font-raleway text-left font-bold">
+                    <span
+                      style={{ color: "white" }}
+                      className="text-bluegray-900 font-raleway text-left font-bold"
+                    >
                       new collections
                     </span>
-                    <span className="text-black-900 font-raleway text-left font-bold">
+                    <span
+                      style={{ color: "white" }}
+                      className="text-black-900 font-raleway text-left font-bold"
+                    >
                       {" "}
                       of furniture to decorate the corner of your house.
                     </span>
                   </Text>
                 </div>
                 <Button
+                  style={{ color: "white" }}
                   className="common-pointer bg-bluegray-900 border-2 border-bluegray-900 border-solid cursor-pointer font-medium leading-[normal] min-w-[218px] py-[18px] text-center text-xl text-yellow-100 tracking-[-0.50px]"
-                  onClick={() => navigate("/shop")}
+                  onClick={() => navigate("/products")}
                 >
                   Shop Now
                 </Button>
               </div>
-              <Img
+              {/* <Img
                 className="flex-1 md:flex-none h-[566px] sm:h-auto max-h-[566px] object-cover sm:w-[] md:w-[]"
-                src="images/img_nathanoakleyo.png"
+                src="images/homeHeaderImg.jpg"
                 alt="nathanoakleyo"
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -89,16 +163,7 @@ const HomepagePage: React.FC = () => {
           >
             <div className="bg-gradient  flex flex-1 flex-col items-start justify-start sm:px-5 px-[30px] py-6 w-full">
               <div className="flex sm:flex-col flex-row sm:gap-10 gap-[76px] items-center justify-start w-full">
-                {/* <div className="flex flex-1 flex-col gap-6 items-start justify-start w-full">
-                  <Button
-                    className="common-pointer border-2 border-gray-50 border-solid cursor-pointer font-medium leading-[normal] min-w-[155px] py-[15px] text-base text-center text-gray-50 tracking-[-0.50px]"
-                    onClick={() => navigate("/products")}
-                  >
-                    Shop Now
-                  </Button>
-                </div> */}
                 <Img
-                  // className="h-[301px] md:h-auto max-h-[301px] object-cover sm:w-[]"
                   src="images/hasTwoRoom.jpg"
                   alt="sammoghadamkh"
                   style={{ width: "100%" }}
@@ -308,7 +373,7 @@ const HomepagePage: React.FC = () => {
               New Arrival
             </Text>
             <div className="flex flex-col font-rubik items-start justify-start w-full">
-              <div className="md:gap-5 gap-[19px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 justify-center min-h-[auto] w-full">
+              <div className="md:gap-5 gap-[19px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center min-h-[auto] w-full">
                 {homepageCardproductPropList.map((props, index) => (
                   <React.Fragment key={`HomepageCardproduct${index}`}>
                     <HomepageCardproduct
@@ -431,7 +496,7 @@ const HomepagePage: React.FC = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center md:px-10 sm:px-5 px-[75px] w-full">
+        {/* <div className="flex flex-col items-center justify-center md:px-10 sm:px-5 px-[75px] w-full">
           <div className="flex flex-col gap-[50px] items-center justify-start max-w-[1290px] mx-auto w-full">
             <div className="flex flex-col gap-[13px] items-center justify-start w-full">
               <Text
@@ -462,7 +527,7 @@ const HomepagePage: React.FC = () => {
               ))}
             </List>
           </div>
-        </div>
+        </div> */}
         <div className="flex flex-col font-rubik items-start justify-start md:px-10 sm:px-5 px-[75px] w-full">
           <CartColumnframe48095972 className="bg-gradient  flex flex-col gap-2 items-start justify-start max-w-[1290px] mx-auto pl-[59px] md:px-5 py-[46px] w-full" />
         </div>
