@@ -1,11 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "pages/Home";
 import NotFound from "pages/NotFound";
-const Aboutus = React.lazy(() => import("pages/Aboutus"));
-const Contactus = React.lazy(() => import("pages/Contactus"));
 const Shop = React.lazy(() => import("pages/Shop"));
+const Aboutus = React.lazy(() => import("pages/Aboutus"));
 const Homepage = React.lazy(() => import("pages/Homepage"));
+const Contactus = React.lazy(() => import("pages/Contactus"));
 const ProjectRoutes = () => {
   return (
     <React.Suspense fallback={<>Loading...</>}>
