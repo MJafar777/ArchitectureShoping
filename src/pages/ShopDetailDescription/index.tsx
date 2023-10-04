@@ -17,6 +17,8 @@ import CartColumnframe48095972 from "components/CartColumnframe48095972";
 import CartNavbar from "components/CartNavbar";
 import CartSectionfooter from "components/CartSectionfooter";
 import HomepageCardproduct from "components/HomepageCardproduct";
+import { fourRoom1 } from "assets/images";
+// import img from '../../assets/images/products/1.png'
 
 const homeOptionsList = [
   { label: "Option1", value: "option1" },
@@ -55,9 +57,10 @@ const ShopDetailDescriptionPage: React.FC = () => {
             <div className="flex md:flex-col flex-row gap-[47px] items-center justify-start max-w-[1290px] mx-auto w-full">
               <Img
                 className="flex-1 md:flex-none md:h-[595px] sm:h-auto h-full max-h-[595px] object-cover sm:w-[] md:w-[]"
-                src="images/img_rectangle1475.png"
+                src={`${fourRoom1}`}
                 alt="rectangle1475"
               />
+              {/* <img src={`${img}`} alt="" /> */}
               <div className="flex flex-1 flex-col gap-[30px] items-start justify-start w-full">
                 <div className="flex flex-col gap-[33px] items-start justify-start w-full">
                   <Text
@@ -249,7 +252,7 @@ const ShopDetailDescriptionPage: React.FC = () => {
                   </div>
                   <Img
                     className="h-[301px] md:h-auto max-h-[301px] object-cover sm:w-[]"
-                    src="images/img_sammoghadamkh.png"
+                    src="images/img_rectangle16.png"
                     alt="sammoghadamkh"
                   />
                 </div>
@@ -275,7 +278,7 @@ const ShopDetailDescriptionPage: React.FC = () => {
               Related Products
             </Text>
             <div className="flex flex-col font-rubik gap-[43px] items-center justify-start w-full">
-              <Slider
+              {/* <Slider
                 autoPlay
                 autoPlayInterval={2000}
                 activeIndex={sliderState}
@@ -320,8 +323,8 @@ const ShopDetailDescriptionPage: React.FC = () => {
                     />
                   );
                 }}
-              />
-              <PagerIndicator
+              /> */}
+              {/* <PagerIndicator
                 className="flex gap-[15px] h-[15px] items-start justify-center max-w-[1289px] w-full"
                 count={3}
                 activeCss="inline-block cursor-pointer rounded-[50%] h-[15px] bg-bluegray-900 w-[15px]"
@@ -330,7 +333,7 @@ const ShopDetailDescriptionPage: React.FC = () => {
                 sliderRef={sliderRef}
                 selectedWrapperCss="inline-block"
                 unselectedWrapperCss="inline-block"
-              />
+              /> */}
             </div>
           </div>
         </div>

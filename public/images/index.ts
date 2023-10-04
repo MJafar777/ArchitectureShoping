@@ -1,0 +1,1 @@
+export {default as fourRoom1} from '../images/home/fourRoom1.png'

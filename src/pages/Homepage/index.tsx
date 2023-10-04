@@ -4,16 +4,10 @@ import { useNavigate } from "react-router-dom";
 
 import { Button, Img, List, PagerIndicator, Slider, Text } from "components";
 import CartColumnframe48095972 from "components/CartColumnframe48095972";
-import CartNavbar from "components/CartNavbar";
+
 import CartSectionfooter from "components/CartSectionfooter";
-import HomepageCardblog from "components/HomepageCardblog";
-// import bgHome from '../../../public/images'
 import HomepageCardproduct from "components/HomepageCardproduct";
-const homeOptionsList = [
-  { label: "Option1", value: "option1" },
-  { label: "Option2", value: "option2" },
-  { label: "Option3", value: "option3" },
-];
+import Header from "components/Header";
 
 const HomepagePage: React.FC = () => {
   const navigate = useNavigate();
@@ -81,17 +75,12 @@ const HomepagePage: React.FC = () => {
       twentyfour: "$189.000",
     },
   ];
-  const homepageCardblogPropList = [
-    {},
-    { rectangleeighteen: "images/bgHomeHeader.jpg" },
-    { rectangleeighteen: "images/img_rectangle18_1.png" },
-  ];
 
   return (
     <>
       <div className="bg-gray-50 flex flex-col font-rubik sm:gap-10 md:gap-10 gap-[100px] items-center justify-start mx-auto w-auto sm:w-full md:w-full">
         <div className="flex flex-col items-start justify-start w-full">
-          <CartNavbar className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[35px] w-full" />
+          <Header className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[10px] w-full" />
           <div
             style={{
               backgroundImage: `url(${"images/bgHomeHeader.jpg"})`,
@@ -155,6 +144,63 @@ const HomepagePage: React.FC = () => {
             </div>
           </div>
         </div>
+
+        <Slider
+          autoPlay
+          autoPlayInterval={2000}
+          activeIndex={sliderState}
+          responsive={{
+            0: { items: 1 },
+            550: { items: 1 },
+            1050: { items: 1 },
+          }}
+          onSlideChanged={(e) => {
+            setsliderState(e?.item);
+          }}
+          ref={sliderRef}
+          className="w-full"
+          items={[...Array(3)].map(() => (
+            <React.Fragment key={Math.random()}>
+              <List
+                className="flex flex-col gap-[47px] items-center mx-2.5"
+                orientation="vertical"
+              >
+                <div className="gap-[19px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 items-start justify-start w-full">
+                  <HomepageCardproduct
+                    className="flex flex-1 flex-col gap-4 items-start justify-start "
+                    image="images/home/twoRoom1.png"
+                    link="2"
+                  />
+                  <HomepageCardproduct
+                    className="flex flex-1 flex-col gap-4 items-start justify-start "
+                    image="images/home/threeRoom1.png"
+                    link="3"
+                  />
+
+                  <HomepageCardproduct
+                    className="flex flex-1 flex-col gap-4 items-start justify-start "
+                    image="images/home/fourRoom1.png"
+                    link="4"
+                  />
+                </div>
+              </List>
+            </React.Fragment>
+          ))}
+          renderDotsItem={({ isActive }) => {
+            if (isActive) {
+              return (
+                <div className="inline-block cursor-pointer rounded-[50%] h-[15px] bg-bluegray-900 w-[15px]" />
+              );
+            }
+            return (
+              <div
+                className="inline-block cursor-pointer rounded-[50%] h-[15px] bg-gray-200 w-[15px]"
+                role="button"
+                tabIndex={0}
+              />
+            );
+          }}
+        />
 
         <div className="flex flex-col items-center justify-center md:px-10 sm:px-5 px-[75px] w-full">
           <List
@@ -230,6 +276,7 @@ const HomepagePage: React.FC = () => {
             </div> */}
           </List>
         </div>
+
         <div className="flex flex-col items-center justify-start md:px-10 sm:px-5 px-[75px] w-full">
           <div className="flex flex-col gap-[46px] items-center justify-start max-w-[1290px] mx-auto w-full">
             <div className="flex flex-col gap-[13px] items-center justify-start w-full">

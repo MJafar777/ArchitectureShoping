@@ -96,7 +96,7 @@ const CheckoutPage: React.FC = () => {
                         </Text>
                         <Input
                           name="frame48096054"
-                          placeholder="Your email here.."
+                          placeholder="Ваш электронный адрес..."
                           className="font-rubik leading-[normal] p-0 placeholder:text-gray-500 sm:px-5 text-gray-500 text-left text-sm tracking-[-0.50px] w-full"
                           wrapClassName="border border-bluegray-100 border-solid pl-[22px] pr-[35px] py-[18px] w-full"
                           type="email"

@@ -226,7 +226,7 @@ const BlogDetailPage: React.FC = () => {
                             </Text>
                             <Input
                               name="frame48096015_One"
-                              placeholder="Write your email here...."
+                              placeholder="Ваш электронный адрес..."
                               className="font-rubik p-0 placeholder:text-gray-500 sm:pr-5 text-gray-500 text-left text-sm tracking-[-0.50px] w-full"
                               wrapClassName="border border-bluegray-100 border-solid pl-[18px] pr-[35px] py-5 w-full"
                               type="email"
