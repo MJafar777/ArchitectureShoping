@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { Button, Img, List, PagerIndicator, Slider, Text } from "components";
 import CartColumnframe48095972 from "components/CartColumnframe48095972";
@@ -168,14 +168,18 @@ const HomepagePage: React.FC = () => {
                   <HomepageCardproduct
                     className="flex flex-1 flex-col gap-4 items-start justify-start "
                     image="images/home/twoRoom1.png"
+                    link="2"
                   />
                   <HomepageCardproduct
                     className="flex flex-1 flex-col gap-4 items-start justify-start "
                     image="images/home/threeRoom1.png"
+                    link="3"
                   />
+
                   <HomepageCardproduct
                     className="flex flex-1 flex-col gap-4 items-start justify-start "
                     image="images/home/fourRoom1.png"
+                    link="4"
                   />
                 </div>
               </List>

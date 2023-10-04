@@ -6,6 +6,9 @@ const Aboutus = React.lazy(() => import("pages/Aboutus"));
 const Contactus = React.lazy(() => import("pages/Contactus"));
 const Shop = React.lazy(() => import("pages/Shop"));
 const Homepage = React.lazy(() => import("pages/Homepage"));
+const InfoEachRoom = React.lazy(
+  () => import("components/InfoEachRoom/InfoEachRoom")
+);
 const ProjectRoutes = () => {
   return (
     <React.Suspense fallback={<>Loading...</>}>
@@ -15,6 +18,7 @@ const ProjectRoutes = () => {
           <Route path="/products" element={<Shop />} />
           <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/contactus" element={<Contactus />} />
+          <Route path="/room/:id" element={<InfoEachRoom />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
