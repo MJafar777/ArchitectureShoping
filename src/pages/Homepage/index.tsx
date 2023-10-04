@@ -88,52 +88,36 @@ const HomepagePage: React.FC = () => {
               backgroundRepeat: "no-repeat",
               height: "85vh",
             }}
-            className="bg-orange-50 flex flex-col items-start justify-start md:px-10 sm:px-5 px-[75px] py-20 w-full"
+            className="bg-orange-50 flex flex-col items-center  md:px-10 sm:px-5 px-[75px] py-20 w-full"
           >
-            <div className="flex md:flex-col flex-row md:gap-10 gap-[60px] items-center justify-start max-w-[1290px] mx-auto w-full">
+            <div className="flex md:flex-col flex-row md:gap-10 gap-[60px] items-center  max-w-[1290px] mx-auto w-full">
               <div
-                style={{ backgroundColor: "#00000074", padding: "20px" }}
-                className="flex flex-1 flex-col gap-[30px] items-start justify-start w-full"
+                style={{
+                  backgroundColor: "#00000074",
+                  padding: "30px",
+                  textAlign: "center",
+                }}
+                className="flex flex-1 flex-col gap-[30px] items-start  w-full"
               >
-                <div className="flex flex-col gap-[26px] items-start justify-start w-full">
+                <div className="flex flex-col gap-[26px] items-start  w-full">
                   <Text
-                    className=" text-xl tracking-[-0.50px] w-full"
-                    size="txtRubikRomanRegular20"
-                    style={{ color: "white" }}
-                  >
-                    Interior Needs
-                  </Text>
-                  <Text
-                    className="leading-[60.00px] max-w-[615px] md:max-w-full sm:text-4xl md:text-[38px] text-[40px] text-black-900 tracking-[-0.50px]"
+                    className="leading-[60.00px] w-full md:max-w-full sm:text-4xl md:text-[38px] text-[30px] text-black-900 tracking-[-0.50px] text-center"
                     size="txtPollerOneRegular40"
                   >
                     <span
                       style={{ color: "white" }}
                       className="text-black-900 font-raleway text-left font-bold"
                     >
-                      Various{" "}
-                    </span>
-                    <span
-                      style={{ color: "white" }}
-                      className="text-bluegray-900 font-raleway text-left font-bold"
-                    >
-                      new collections
-                    </span>
-                    <span
-                      style={{ color: "white" }}
-                      className="text-black-900 font-raleway text-left font-bold"
-                    >
-                      {" "}
-                      of furniture to decorate the corner of your house.
+                      Для тех, кто любит комфорт и качество
                     </span>
                   </Text>
                 </div>
                 <Button
                   style={{ color: "white" }}
-                  className="common-pointer bg-bluegray-900 border-2 border-bluegray-900 border-solid cursor-pointer font-medium leading-[normal] min-w-[218px] py-[18px] text-center text-xl text-yellow-100 tracking-[-0.50px]"
+                  className="common-pointer bg-bluegray-900 border-2 border-bluegray-900 border-solid cursor-pointer font-medium leading-[normal] min-w-[218px] py-[18px] text-center text-xl text-yellow-100 tracking-[-0.50px] m-auto"
                   onClick={() => navigate("/products")}
                 >
-                  Shop Now
+                  Узнать больше
                 </Button>
               </div>
               {/* <Img
@@ -285,22 +269,15 @@ const HomepagePage: React.FC = () => {
                 size="txtRalewayBold40"
               >
                 <span className="text-black-900 font-raleway font-bold">
-                  Our{" "}
-                </span>
-                <span className="text-black-900 font-raleway font-bold">
-                  Newest
-                </span>
-                <span className="text-black-900 font-raleway font-bold">
-                  {" "}
-                  Product
+                  Наш продукт
                 </span>
               </Text>
               <Text
                 className="text-center text-gray-500 text-lg tracking-[-0.50px] w-full"
                 size="txtRubikRegular18Gray500"
               >
-                Made of the best materials and with a design that follows the
-                times
+                Изготовлен из лучших материалов и имеет дизайн, идущий в ногу со
+                временем.
               </Text>
             </div>
             <Slider
@@ -385,24 +362,18 @@ const HomepagePage: React.FC = () => {
             <div className="flex sm:flex-1 flex-col gap-[30px] items-start justify-start w-[525px] sm:w-full">
               <div className="flex flex-col gap-[18px] items-start justify-start w-full">
                 <Text
-                  className="text-2xl md:text-[22px] text-bluegray-900 sm:text-xl tracking-[-0.50px] w-full"
+                  className="text-2xl md:text-[22px] text-bluegray-900 sm:text-xl tracking-[-0.50px] w-full ml-10"
                   size="txtRubikRegular24"
                 >
-                  Interior Modern
+                  Интерьер Модерн
                 </Text>
                 <Text
-                  className="leading-[60.00px] max-w-[525px] md:max-w-full sm:text-4xl md:text-[38px] text-[40px] text-black-900 tracking-[-0.50px]"
+                  className="leading-[60.00px] max-w-[525px] md:max-w-full sm:text-4xl md:text-[38px] text-[40px] text-black-900 tracking-[-0.50px] ml-10"
                   size="txtRalewayRomanBold40"
                 >
-                  Arrange your home in such a way with our modern interiors
+                  Обустройте свой дом таким образом с наших современных
                 </Text>
               </div>
-              <Button
-                className="common-pointer border-2 border-bluegray-900 border-solid cursor-pointer font-medium leading-[normal] min-w-[218px] py-[18px] text-bluegray-900 text-center text-xl tracking-[-0.50px]"
-                onClick={() => navigate("/shopdetaildescription")}
-              >
-                Shop Now
-              </Button>
             </div>
             <Img
               className="sm:flex-1 h-[535px] md:h-auto object-cover w-[535px] sm:w-full"
@@ -413,12 +384,6 @@ const HomepagePage: React.FC = () => {
         </div>
         <div className="flex flex-col font-raleway items-center justify-start md:px-10 sm:px-5 px-[75px] w-full">
           <div className="flex flex-col md:gap-10 gap-[67px] items-center justify-start max-w-[1290px] mx-auto w-full">
-            <Text
-              className="md:text-3xl sm:text-[28px] text-[32px] text-bluegray-900 text-center tracking-[-0.50px] w-full"
-              size="txtRalewayRomanBold32"
-            >
-              New Arrival
-            </Text>
             <div className="flex flex-col font-rubik items-start justify-start w-full">
               <div className="md:gap-5 gap-[19px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center min-h-[auto] w-full">
                 {homepageCardproductPropList.map((props, index) => (
@@ -441,99 +406,21 @@ const HomepagePage: React.FC = () => {
                 className="leading-[60.00px] max-w-[602px] md:max-w-full sm:text-4xl md:text-[38px] text-[40px] text-black-900 tracking-[-0.50px]"
                 size="txtRalewayRomanBold40"
               >
-                We guarantee the safety of your shopping
+                Для тех, кто любит комфорт и качество
               </Text>
               <div className="flex flex-col items-start justify-start w-full">
-                <div className="sm:gap-5 gap-[50px] grid sm:grid-cols-1 grid-cols-2 justify-center min-h-[auto] w-full">
-                  <div className="flex flex-1 flex-col gap-10 items-start justify-start w-full">
-                    <Img
-                      className="h-[60px] w-[63px]"
-                      src="images/img_volume.svg"
-                      alt="volume"
-                    />
-                    <div className="flex flex-col gap-3 items-start justify-start w-[276px]">
-                      <Text
-                        className="text-black-900 text-xl tracking-[-0.50px] w-full"
-                        size="txtRalewaySemiBold20"
-                      >
-                        Fast Shipping
-                      </Text>
-                      <Text
-                        className="leading-[25.00px] max-w-[276px] md:max-w-full text-gray-500 text-sm tracking-[-0.50px]"
-                        size="txtRubikRegular14"
-                      >
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry Lorem Ipsum has{" "}
-                      </Text>
-                    </div>
-                  </div>
-                  <div className="flex flex-1 flex-col gap-10 items-start justify-start w-full">
-                    <Img
-                      className="h-[60px] w-[63px]"
-                      src="images/img_lock.svg"
-                      alt="lock"
-                    />
-                    <div className="flex flex-col gap-3 items-start justify-start w-[276px]">
-                      <Text
-                        className="text-black-900 text-xl tracking-[-0.50px] w-full"
-                        size="txtRalewaySemiBold20"
-                      >
-                        Safe Delivery
-                      </Text>
-                      <Text
-                        className="leading-[25.00px] max-w-[276px] md:max-w-full text-gray-500 text-sm tracking-[-0.50px]"
-                        size="txtRubikRegular14"
-                      >
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry Lorem Ipsum has{" "}
-                      </Text>
-                    </div>
-                  </div>
-                  <div className="flex flex-1 flex-col gap-10 items-start justify-start w-full">
-                    <Img
-                      className="h-[60px] w-[63px]"
-                      src="images/img_clock.svg"
-                      alt="clock"
-                    />
-                    <div className="flex flex-col gap-3 items-start justify-start w-[276px]">
-                      <Text
-                        className="text-black-900 text-xl tracking-[-0.50px] w-full"
-                        size="txtRalewaySemiBold20"
-                      >
-                        365 Days Return
-                      </Text>
-                      <Text
-                        className="leading-[25.00px] max-w-[276px] md:max-w-full text-gray-500 text-sm tracking-[-0.50px]"
-                        size="txtRubikRegular14"
-                      >
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry Lorem Ipsum has{" "}
-                      </Text>
-                    </div>
-                  </div>
-                  <div className="flex flex-1 flex-col gap-10 items-start justify-start w-full">
-                    <Img
-                      className="h-[60px] w-[63px]"
-                      src="images/img_call.svg"
-                      alt="call"
-                    />
-                    <div className="flex flex-col gap-3 items-start justify-start w-[276px]">
-                      <Text
-                        className="text-black-900 text-xl tracking-[-0.50px] w-full"
-                        size="txtRalewaySemiBold20"
-                      >
-                        24 hours CS
-                      </Text>
-                      <Text
-                        className="leading-[25.00px] max-w-[276px] md:max-w-full text-gray-500 text-sm tracking-[-0.50px]"
-                        size="txtRubikRegular14"
-                      >
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry Lorem Ipsum has{" "}
-                      </Text>
-                    </div>
-                  </div>
-                </div>
+                <Text
+                  className="text-black-900 text-xl w-full"
+                  size="txtRalewaySemiBold20"
+                >
+                  Двор жилого комплекса - это защищенна территория, где всё
+                  продуманно для комфортной жизни. Созданы условия для занятий
+                  спортом, а ваши дети смогут игра безопасности, во дворе без
+                  машин, благо) системе car-free zone. Машины, кроме пожарной и
+                  медицинской, не имеют досту на территорию двора. Для
+                  автомобилей жильцов создано специальная многоуровневая
+                  парковочная зона.
+                </Text>
               </div>
             </div>
             <Img
