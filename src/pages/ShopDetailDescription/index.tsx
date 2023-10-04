@@ -1,46 +1,14 @@
 import React from "react";
-
 import { useNavigate } from "react-router-dom";
 
-import {
-  Button,
-  Img,
-  Input,
-  Line,
-  List,
-  PagerIndicator,
-  SelectBox,
-  Slider,
-  Text,
-} from "components";
-import CartColumnframe48095972 from "components/CartColumnframe48095972";
 import CartNavbar from "components/CartNavbar";
+import ThumbnailsExample from "components/ThumbSlide";
 import CartSectionfooter from "components/CartSectionfooter";
-import HomepageCardproduct from "components/HomepageCardproduct";
-
-const homeOptionsList = [
-  { label: "Option1", value: "option1" },
-  { label: "Option2", value: "option2" },
-  { label: "Option3", value: "option3" },
-];
+import { Button, Img, Line, PagerIndicator, Text } from "components";
+import CartColumnframe48095972 from "components/CartColumnframe48095972";
 
 const ShopDetailDescriptionPage: React.FC = () => {
   const navigate = useNavigate();
-
-  const homepageCardproductPropList = [
-    { image: "images/img_image_10.png" },
-    { image: "images/img_image_11.png" },
-    { image: "images/img_image_12.png" },
-    { image: "images/img_image_13.png" },
-  ];
-  const sliderRef = React.useRef(null);
-  const [sliderState, setsliderState] = React.useState(0);
-  const homepageCardproductPropList1 = [
-    { image: "images/img_image_10.png" },
-    { image: "images/img_image_11.png" },
-    { image: "images/img_image_12.png" },
-    { image: "images/img_image_13.png" },
-  ];
 
   function handleNavigate2() {
     window.location.href = "https://accounts.google.com/";
@@ -53,11 +21,9 @@ const ShopDetailDescriptionPage: React.FC = () => {
           <CartNavbar className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[35px] w-full" />
           <div className="flex flex-col items-start justify-start pt-[75px] md:px-10 sm:px-5 px-[75px] w-full">
             <div className="flex md:flex-col flex-row gap-[47px] items-center justify-start max-w-[1290px] mx-auto w-full">
-              <Img
-                className="flex-1 md:flex-none md:h-[595px] sm:h-auto h-full max-h-[595px] object-cover sm:w-[] md:w-[]"
-                src="images/img_rectangle1475.png"
-                alt="rectangle1475"
-              />
+           
+              <ThumbnailsExample />
+           
               <div className="flex flex-1 flex-col gap-[30px] items-start justify-start w-full">
                 <div className="flex flex-col gap-[33px] items-start justify-start w-full">
                   <Text
@@ -249,7 +215,7 @@ const ShopDetailDescriptionPage: React.FC = () => {
                   </div>
                   <Img
                     className="h-[301px] md:h-auto max-h-[301px] object-cover sm:w-[]"
-                    src="images/img_sammoghadamkh.png"
+                    src="images/img_rectangle16.png"
                     alt="sammoghadamkh"
                   />
                 </div>
@@ -274,64 +240,7 @@ const ShopDetailDescriptionPage: React.FC = () => {
             >
               Related Products
             </Text>
-            <div className="flex flex-col font-rubik gap-[43px] items-center justify-start w-full">
-              <Slider
-                autoPlay
-                autoPlayInterval={2000}
-                activeIndex={sliderState}
-                responsive={{
-                  0: { items: 1 },
-                  550: { items: 1 },
-                  1050: { items: 1 },
-                }}
-                onSlideChanged={(e) => {
-                  setsliderState(e?.item);
-                }}
-                ref={sliderRef}
-                className="w-full"
-                items={[...Array(3)].map(() => (
-                  <React.Fragment key={Math.random()}>
-                    <List
-                      className="sm:flex-col flex-row gap-[19px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 justify-center mx-2.5"
-                      orientation="horizontal"
-                    >
-                      {homepageCardproductPropList1.map((props, index) => (
-                        <React.Fragment key={`HomepageCardproduct${index}`}>
-                          <HomepageCardproduct
-                            className="flex flex-col gap-4 items-start justify-start w-full"
-                            {...props}
-                          />
-                        </React.Fragment>
-                      ))}
-                    </List>
-                  </React.Fragment>
-                ))}
-                renderDotsItem={({ isActive }) => {
-                  if (isActive) {
-                    return (
-                      <div className="inline-block cursor-pointer rounded-[50%] h-[15px] bg-bluegray-900 w-[15px]" />
-                    );
-                  }
-                  return (
-                    <div
-                      className="inline-block cursor-pointer rounded-[50%] h-[15px] bg-gray-200 w-[15px]"
-                      role="button"
-                      tabIndex={0}
-                    />
-                  );
-                }}
-              />
-              <PagerIndicator
-                className="flex gap-[15px] h-[15px] items-start justify-center max-w-[1289px] w-full"
-                count={3}
-                activeCss="inline-block cursor-pointer rounded-[50%] h-[15px] bg-bluegray-900 w-[15px]"
-                activeIndex={sliderState}
-                inactiveCss="inline-block cursor-pointer rounded-[50%] h-[15px] bg-gray-200 w-[15px]"
-                sliderRef={sliderRef}
-                selectedWrapperCss="inline-block"
-                unselectedWrapperCss="inline-block"
-              />
-            </div>
+            <div className="flex flex-col font-rubik gap-[43px] items-center justify-start w-full"></div>
           </div>
         </div>
         <div className="flex flex-col font-rubik items-start justify-start md:px-10 sm:px-5 px-[75px] w-full">
