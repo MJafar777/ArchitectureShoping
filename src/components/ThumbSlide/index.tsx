@@ -45,9 +45,8 @@ function ThumbnailsExample() {
 
   return (
     <div className="wrapper" style={{ width: "50%" }}>
-      <h2 id="thumbnail-slider-example">Thumbnail Slider</h2>
-
-      <Splide
+'
+'      <Splide
         options={mainOptions}
         ref={mainRef}
         aria-labelledby="thumbnail-slider-example"
