@@ -34,9 +34,9 @@ const HomepageCardproduct: React.FC<HomepageCardproductProps> = (props) => {
             src={`${props.image}`}
             // src="../../assets/images/products/1.jpg"
           />
-          <Button className="absolute bg-bluegray-900 bottom-[4%] cursor-pointer font-rubik leading-[normal] left-[5%] py-[9px] text-center text-sm text-white-A700 tracking-[-0.50px] w-[106px]">
+          {/* <Button className="absolute bg-bluegray-900 bottom-[4%] cursor-pointer font-rubik leading-[normal] left-[5%] py-[9px] text-center text-sm text-white-A700 tracking-[-0.50px] w-[106px]">
             {props?.category}
-          </Button>
+          </Button> */}
           {/* <div className="absolute flex flex-col md:gap-10 gap-[106px] items-center justify-start right-[5%] top-[4%] w-auto">
             {!!props?.status ? (
               <Text
