@@ -73,13 +73,13 @@ const Header: React.FC<HeaderProps> = (props) => {
           style={{
             zIndex: "100",
             width: "100%",
-            height: "100vh",
+            height: "100%",
             position: "fixed",
 
-            top: "0",
-            left: "0",
-            right: "0",
-            bottom: "0",
+            top: "0 !important",
+            left: "0 !important",
+            right: "0 !important",
+            bottom: "0 !important",
             backgroundColor: "#FFF",
           }}
         >
