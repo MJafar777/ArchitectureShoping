@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Img, SelectBox, Text } from "components";
+import { Img, Text } from "components";
 import { Link } from "react-router-dom";
 
 type CartNavbarProps = React.DetailedHTMLProps<
