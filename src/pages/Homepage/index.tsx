@@ -80,9 +80,7 @@ const HomepagePage: React.FC = () => {
     <>
       <div className="bg-gray-50 flex flex-col font-rubik sm:gap-10 md:gap-10 gap-[100px] items-center justify-start mx-auto w-auto sm:w-full md:w-full">
         <div className="flex flex-col items-start justify-start w-full">
-          {/* <CartNavbar className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[35px] w-full" /> */}
           <Header className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[10px] w-full" />
-
           <div
             style={{
               backgroundImage: `url(${"images/bgHomeHeader.jpg"})`,
@@ -203,6 +201,81 @@ const HomepagePage: React.FC = () => {
             );
           }}
         />
+
+        <div className="flex flex-col items-center justify-center md:px-10 sm:px-5 px-[75px] w-full">
+          <List
+            className="sm:flex-col flex-row gap-5 grid md:grid-cols-1 grid-cols-2 justify-center max-w-[1290px] mx-auto w-full"
+            orientation="horizontal"
+          >
+            <div className="bg-gradient  flex flex-1 flex-col items-start justify-start sm:px-5 px-[30px] py-6 w-full">
+              <div className="flex sm:flex-col flex-row sm:gap-10 gap-[76px] items-center justify-start w-full">
+                <Img
+                  src="images/hasTwoRoom.jpg"
+                  alt="sammoghadamkh"
+                  style={{ width: "100%" }}
+                />
+              </div>
+            </div>
+            <div className="bg-gradient  flex flex-1 flex-col items-start justify-start sm:px-5 px-[30px] py-6 w-full">
+              <div className="flex sm:flex-col flex-row sm:gap-10 gap-[76px] items-center justify-start w-full">
+                <Img
+                  src="images/hasThreeRoom.jpg"
+                  alt="sammoghadamkh"
+                  style={{ width: "100%" }}
+                />
+              </div>
+            </div>
+            <div className="bg-gradient  flex flex-1 flex-col items-start justify-start sm:px-5 px-[30px] py-6 w-full">
+              <div className="flex sm:flex-col flex-row sm:gap-10 gap-[76px] items-center justify-start w-full">
+                <Img
+                  src="images/hasFourRoom.jpg"
+                  alt="sammoghadamkh"
+                  style={{ width: "100%" }}
+                />
+              </div>
+            </div>
+            <div className="bg-gradient  flex flex-1 flex-col items-start justify-start sm:px-5 px-[30px] py-6 w-full">
+              <div className="flex sm:flex-col flex-row sm:gap-10 gap-[76px] items-center justify-start w-full">
+                <Img
+                  src="images/hasAllRoom.jpg"
+                  alt="sammoghadamkh"
+                  style={{ width: "100%" }}
+                />
+              </div>
+            </div>
+            {/* <div className="bg-gradient  flex flex-1 flex-col items-center justify-center sm:px-5 px-[30px] py-6 w-full">
+              <div className="flex sm:flex-col flex-row sm:gap-10 gap-[79px] h-[301px] md:h-auto items-center justify-start w-full">
+                <div className="flex flex-1 flex-col gap-6 items-start justify-start w-full">
+                  <div className="flex flex-col gap-[31px] items-start justify-start w-full">
+                    <Text
+                      className="text-gray-53 text-lg tracking-[-0.50px] w-full"
+                      size="txtRubikRegular18Gray53"
+                    >
+                      Living Room
+                    </Text>
+                    <Text
+                      className="max-w-[306px] md:max-w-full text-4xl sm:text-[32px] md:text-[34px] text-gray-53 tracking-[-0.50px]"
+                      size="txtRalewayBold36"
+                    >
+                      Latest model chandelier
+                    </Text>
+                  </div>
+                  <Button
+                    className="common-pointer border-2 border-gray-50 border-solid cursor-pointer font-medium leading-[normal] min-w-[155px] py-[15px] text-base text-center text-gray-50 tracking-[-0.50px]"
+                    onClick={() => navigate("/products")}
+                  >
+                    Shop Now
+                  </Button>
+                </div>
+                <Img
+                  className="h-[244px] md:h-auto max-h-[244px] object-cover sm:w-[]"
+                  src="images/img_phildesforges.png"
+                  alt="phildesforges"
+                />
+              </div>
+            </div> */}
+          </List>
+        </div>
 
         <div className="flex flex-col items-center justify-start md:px-10 sm:px-5 px-[75px] w-full">
           <div className="flex flex-col gap-[46px] items-center justify-start max-w-[1290px] mx-auto w-full">

@@ -1,4 +1,4 @@
-## jasur_s_application2
+## SEVEN RESIDENCE
 
 Generated with ❤️ from [DhiWise](https://www.dhiwise.com)
 
