@@ -114,7 +114,7 @@ const AboutusPage: React.FC = () => {
             </div>
             <Img
               className="h-[650px] sm:h-auto max-h-[650px] object-cover rounded-bl-[300px] rounded-tl-[300px] rounded-tr-[300px] sm:w-[] md:w-[]"
-              src="images/img_rectangle1492.png"
+              src="images/b1.jpg"
               alt="rectangle1492"
             />
           </div>
