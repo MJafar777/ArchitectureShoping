@@ -94,11 +94,11 @@ const ShopPage: React.FC = () => {
                 className="leading-[60.00px] w-full  text-4xl  text-white-A700 tracking-[-0.50px] text-center "
                 size="txtRalewayRomanBold36"
               >
-                Our Products
+                Наши продукты
               </Text>
             </div>
           </div>
-        </div>
+        </div> 
       </div>
 
       <div className="flex flex-col font-raleway items-start justify-start md:px-10 sm:px-5 px-[75px] w-full">
