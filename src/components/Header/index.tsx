@@ -16,12 +16,7 @@ const Header: React.FC<HeaderProps> = (props) => {
         <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between w-full">
           <div className="header-row ">
             <Link to="/">
-              <Img
-                src="images/logo.png"
-                width={70}
-                height={70}
-                alt="car"
-              />
+              <Img src="images/logo.png" alt="car" width={150} height={150} />
             </Link>
             <div className="mobile-menu">
               <div></div>
