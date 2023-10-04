@@ -1,7 +1,6 @@
 import React from "react";
-
-import { Img, Text } from "components";
-import { Link } from "react-router-dom";
+import { Img, SelectBox, Text } from "components";
+import { Link, NavLink } from "react-router-dom";
 
 type CartNavbarProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLDivElement>,
@@ -33,29 +32,29 @@ const CartNavbar: React.FC<CartNavbarProps> = (props) => {
           </div>
           <div className="flex sm:flex-1 flex-row gap-9 sm:hidden items-center justify-between w-[498px] sm:w-full">
             <Text
-              className="text-black-900 text-lg tracking-[-0.50px] w-auto"
+              className="text-black-900 text-lg tracking-[-0.50px] w-auto  hover:text-blue-700"
               size="txtRubikRomanRegular18"
             >
-              <Link to="/">Home</Link>
+              <NavLink to="/">Главная </NavLink>
             </Text>
             <Text
-              className="text-black-900 text-lg tracking-[-0.50px] w-auto"
+              className="text-black-900 text-lg tracking-[-0.50px] w-auto hover:text-blue-700"
               size="txtRubikRomanRegular18"
             >
-              <Link to={"/products"}>Shop</Link>
+              <NavLink to={"/products"}>Продукты</NavLink>
             </Text>
 
             <Text
-              className="text-black-900 text-lg tracking-[-0.50px] w-auto"
+              className="text-black-900 text-lg tracking-[-0.50px] w-auto hover:text-blue-700"
               size="txtRubikRomanRegular18"
             >
-              <Link to="/aboutus">About</Link>
+              <NavLink to="/aboutus">О нас</NavLink>
             </Text>
             <Text
-              className="text-black-900 text-lg tracking-[-0.50px] w-auto"
+              className="text-black-900 text-lg tracking-[-0.50px] w-auto hover:text-blue-700"
               size="txtRubikRomanRegular18"
             >
-              <Link to="/contactus">Contact</Link>
+              <Link to="/contactus">Контакты</Link>
             </Text>
           </div>
           <div></div>

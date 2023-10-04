@@ -20,16 +20,13 @@ const CartSectionfooter: React.FC<CartSectionfooterProps> = (props) => {
                 className="md:text-3xl sm:text-[28px] text-[32px] text-gray-53 tracking-[-0.50px] w-auto"
                 size="txtRalewayRomanBold32Gray53"
               >
-                <Link to="/">Furnit.</Link>
+                <Link to="/">SEVEN RESIDENCE.</Link>
               </Text>
               <Text
                 className="leading-[35.00px] max-w-[360px] md:max-w-full text-base text-gray-50_a3 tracking-[-0.50px]"
                 size="txtRubikRegular16Gray50a3"
               >
-                Lorem ipsum dolor sit amet litam consectetur adipiscing elit,
-                facilisi vivamus proin lit laoreet phasel alilus porttitor
-                inter, facilisis condiment tarime egestas rhoncus dapibus
-                iaculis alemir.
+                Для тех, кто любит комфорт и качество
               </Text>
             </div>
             <div className="flex flex-col gap-5 items-start justify-start w-[209px]">
@@ -37,39 +34,41 @@ const CartSectionfooter: React.FC<CartSectionfooterProps> = (props) => {
                 className="text-gray-53 text-xl tracking-[-0.50px] w-auto"
                 size="txtRalewayRomanSemiBold20Gray53"
               >
-                Customer
+                Карта сайта
               </Text>
               <div className="flex flex-col gap-6 items-start justify-start w-auto">
-                <Text
-                  className="text-gray-50_a3 text-sm tracking-[-0.50px] w-auto"
-                  size="txtRubikRegular14Gray50a3"
-                >
-                  Order Status
-                </Text>
-                <Text
-                  className="text-gray-50_a3 text-sm tracking-[-0.50px] w-auto"
-                  size="txtRubikRegular14Gray50a3"
-                >
-                  Collections
-                </Text>
-                <Text
-                  className="text-gray-50_a3 text-sm tracking-[-0.50px] w-auto"
-                  size="txtRubikRegular14Gray50a3"
-                >
-                  Our Story
-                </Text>
-                <Text
-                  className="text-gray-50_a3 text-sm tracking-[-0.50px] w-auto"
-                  size="txtRubikRegular14Gray50a3"
-                >
-                  Affiliates
-                </Text>
-                <Text
-                  className="text-gray-50_a3 text-sm tracking-[-0.50px] w-auto"
-                  size="txtRubikRegular14Gray50a3"
-                >
-                  Security
-                </Text>
+                <Link to={"/"}>
+                  <Text
+                    className="text-gray-50_a3 text-sm tracking-[-0.50px] w-auto cursor-pointer"
+                    size="txtRubikRegular14Gray50a3"
+                  >
+                    Главная
+                  </Text>
+                </Link>
+                <Link to={"/products"}>
+                  <Text
+                    className="text-gray-50_a3 text-sm tracking-[-0.50px] w-auto cursor-pointer "
+                    size="txtRubikRegular14Gray50a3"
+                  >
+                    Продукты
+                  </Text>
+                </Link>
+                <Link to={"/aboutus"}>
+                  <Text
+                    className="text-gray-50_a3 text-sm tracking-[-0.50px] w-auto cursor-pointer"
+                    size="txtRubikRegular14Gray50a3"
+                  >
+                    О нас
+                  </Text>
+                </Link>
+                <Link to={"/contactus"}>
+                  <Text
+                    className="text-gray-50_a3 text-sm tracking-[-0.50px] w-auto cursor-pointer"
+                    size="txtRubikRegular14Gray50a3"
+                  >
+                    Контакты
+                  </Text>
+                </Link>
               </div>
             </div>
             <div className="flex flex-col gap-5 items-start justify-start w-[209px]">
@@ -77,26 +76,33 @@ const CartSectionfooter: React.FC<CartSectionfooterProps> = (props) => {
                 className="text-gray-53 text-xl tracking-[-0.50px] w-auto"
                 size="txtRalewayRomanSemiBold20Gray53"
               >
-                Information
+                Информация
               </Text>
               <div className="flex flex-col gap-6 items-start justify-start w-auto">
                 <Text
-                  className="text-gray-50_a3 text-sm tracking-[-0.50px] w-auto"
+                  className="text-gray-50_a3 text-sm tracking-[-0.50px] w-auto "
                   size="txtRubikRegular14Gray50a3"
                 >
-                  Customer Service
+                  (99) 502 70 07
                 </Text>
                 <Text
                   className="text-gray-50_a3 text-sm tracking-[-0.50px] w-auto"
                   size="txtRubikRegular14Gray50a3"
                 >
-                  Careers
+                  (95) 502 70 07
                 </Text>
                 <Text
                   className="text-gray-50_a3 text-sm tracking-[-0.50px] w-auto"
                   size="txtRubikRegular14Gray50a3"
                 >
-                  FAQ
+                  @Seven_Residence
+                </Text>
+                <Text
+                  className="text-gray-50_a3 text-sm tracking-[-0.50px] w-auto"
+                  size="txtRubikRegular14Gray50a3"
+                >
+                  Адрес: г. Ташкент, Сергалийский р-н, Сергели-7, ул. Мирзы
+                  Турсунзаде
                 </Text>
               </div>
             </div>
@@ -105,7 +111,7 @@ const CartSectionfooter: React.FC<CartSectionfooterProps> = (props) => {
                 className="text-gray-53 text-xl tracking-[-0.50px] w-auto"
                 size="txtRalewayRomanSemiBold20Gray53"
               >
-                Follow Us
+                Подписывайтесь на нас
               </Text>
               <div className="flex flex-row gap-5 items-start justify-start w-auto">
                 <Button className="bg-yellow-100 flex h-10 items-center justify-center p-2 rounded-[50%] w-10">
