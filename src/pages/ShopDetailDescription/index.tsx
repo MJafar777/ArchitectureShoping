@@ -18,6 +18,7 @@ import CartNavbar from "components/CartNavbar";
 import CartSectionfooter from "components/CartSectionfooter";
 import HomepageCardproduct from "components/HomepageCardproduct";
 import { fourRoom1 } from "assets/images";
+import  ThumbnailsExample  from "components/ThumbSlide";
 // import img from '../../assets/images/products/1.png'
 
 const homeOptionsList = [
@@ -55,11 +56,13 @@ const ShopDetailDescriptionPage: React.FC = () => {
           <CartNavbar className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[35px] w-full" />
           <div className="flex flex-col items-start justify-start pt-[75px] md:px-10 sm:px-5 px-[75px] w-full">
             <div className="flex md:flex-col flex-row gap-[47px] items-center justify-start max-w-[1290px] mx-auto w-full">
-              <Img
+              {/* <Img
                 className="flex-1 md:flex-none md:h-[595px] sm:h-auto h-full max-h-[595px] object-cover sm:w-[] md:w-[]"
                 src={`${fourRoom1}`}
                 alt="rectangle1475"
-              />
+              /> */}
+              <ThumbnailsExample />
+
               {/* <img src={`${img}`} alt="" /> */}
               <div className="flex flex-1 flex-col gap-[30px] items-start justify-start w-full">
                 <div className="flex flex-col gap-[33px] items-start justify-start w-full">
