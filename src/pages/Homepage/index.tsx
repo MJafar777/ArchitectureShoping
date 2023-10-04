@@ -7,6 +7,7 @@ import CartColumnframe48095972 from "components/CartColumnframe48095972";
 import CartNavbar from "components/CartNavbar";
 import CartSectionfooter from "components/CartSectionfooter";
 import HomepageCardproduct from "components/HomepageCardproduct";
+import Header from "components/Header";
 
 const HomepagePage: React.FC = () => {
   const navigate = useNavigate();
@@ -79,7 +80,7 @@ const HomepagePage: React.FC = () => {
     <>
       <div className="bg-gray-50 flex flex-col font-rubik sm:gap-10 md:gap-10 gap-[100px] items-center justify-start mx-auto w-auto sm:w-full md:w-full">
         <div className="flex flex-col items-start justify-start w-full">
-          <CartNavbar className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[35px] w-full" />
+          <Header className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[10px] w-full" />
           <div
             style={{
               backgroundImage: `url(${"images/bgHomeHeader.jpg"})`,

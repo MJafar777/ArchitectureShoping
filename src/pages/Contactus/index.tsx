@@ -11,14 +11,42 @@ const ContactusPage: React.FC = () => {
       <div className="bg-gray-50 flex flex-col font-rubik  gap-[100px] items-start justify-start mx-auto w-auto sm:w-full md:w-full">
         <div className="flex flex-col ap-[75px] items-start justify-start w-full">
           <Header className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[10px] w-full" />
-          <div className="flex flex-col font-poppins items-start justify-start  w-full">
-            <div className="flex flex-col items-start justify-start max-w-[1291px] mx-auto w-full">
-              <div className="h-[645px] relative w-full">
-                <Img
-                  className="h-full m-auto object-cover w-full"
-                  src="images/a2.jpg"
-                  alt="rectangleTwentyEight"
-                />
+          <div
+            style={{
+              backgroundImage: `url(${"images/bgHomeHeader.jpg"})`,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              height: "85vh",
+            }}
+            className="bg-orange-50 flex flex-col items-start justify-start md:px-10 sm:px-5 px-[75px] py-20 w-full"
+          >
+            <div className="flex md:flex-col flex-row md:gap-10 gap-[60px] items-center justify-start max-w-[1290px] mx-auto w-full">
+              <div
+                style={{ backgroundColor: "#00000074", padding: "20px" }}
+                className="flex flex-1 flex-col gap-[30px] items-center justify-center w-full"
+              >
+                <div className="flex flex-col gap-[26px] items-center justify-center w-full text-center">
+                  <Text
+                    className="leading-[60.00px] max-w-[615px] md:max-w-full sm:text-4xl md:text-[38px] text-[40px] text-black-900 tracking-[-0.50px] text-center "
+                    size="txtPollerOneRegular40"
+                  >
+                    <span
+                      style={{ color: "white" }}
+                      className="text-black-900 font-raleway text-left font-bold"
+                    >
+                      Оставьте заявку
+                    </span>
+                    <br />
+                    <span
+                      style={{ color: "white" }}
+                      className="text-black-900 font-raleway text-left font-bold"
+                    >
+                      {" "}
+                      Оставьте контактные данные и мы обязательно свяжемся с
+                      вами
+                    </span>
+                  </Text>
+                </div>
               </div>
             </div>
           </div>

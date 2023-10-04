@@ -6,6 +6,7 @@ import CartNavbar from "components/CartNavbar";
 import CartSectionfooter from "components/CartSectionfooter";
 import TeamCardteam from "components/TeamCardteam";
 import HomepageCardproduct from "components/HomepageCardproduct";
+import Header from "components/Header";
 
 const AboutusPage: React.FC = () => {
   const sliderRef = React.useRef(null);
@@ -83,10 +84,11 @@ const AboutusPage: React.FC = () => {
 
   return (
     <>
-      <div className="bg-gray-50 flex flex-col font-rubik sm:gap-10 md:gap-10 gap-[100px] items-start justify-start mx-auto w-auto sm:w-full md:w-full">
-        <CartNavbar className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[35px] w-full" />
+      <div className="bg-gray-50 flex flex-col font-rubik sm:gap-10 md:gap-10 gap-[50px] items-start justify-start mx-auto w-auto sm:w-full md:w-full">
+        <Header className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[10px] w-full" />
+
         <div className="flex flex-col items-start justify-start md:px-10 sm:px-5 px-[75px] w-full">
-          <div className="flex md:flex-col flex-row md:gap-10 gap-[138px] items-center justify-between max-w-[1290px] mx-auto w-full">
+          <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between max-w-[1290px] mx-auto w-full">
             <div className="flex flex-1 flex-col gap-14 items-start justify-start w-full">
               <div className="flex flex-col gap-[25px] items-start justify-start w-full">
                 <div className="flex flex-col gap-[25px] items-start justify-start w-full">
