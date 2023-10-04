@@ -9,6 +9,7 @@ import CartSectionfooter from "components/CartSectionfooter";
 import HomepageCardblog from "components/HomepageCardblog";
 // import bgHome from '../../../public/images'
 import HomepageCardproduct from "components/HomepageCardproduct";
+import Header from "components/Header";
 const homeOptionsList = [
   { label: "Option1", value: "option1" },
   { label: "Option2", value: "option2" },
@@ -91,7 +92,9 @@ const HomepagePage: React.FC = () => {
     <>
       <div className="bg-gray-50 flex flex-col font-rubik sm:gap-10 md:gap-10 gap-[100px] items-center justify-start mx-auto w-auto sm:w-full md:w-full">
         <div className="flex flex-col items-start justify-start w-full">
-          <CartNavbar className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[35px] w-full" />
+          {/* <CartNavbar className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[35px] w-full" /> */}
+          <Header className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[10px] w-full" />
+
           <div
             style={{
               backgroundImage: `url(${"images/bgHomeHeader.jpg"})`,

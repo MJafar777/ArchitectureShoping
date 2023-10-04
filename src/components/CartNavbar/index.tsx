@@ -20,7 +20,7 @@ const CartNavbar: React.FC<CartNavbarProps> = (props) => {
     <>
       <header className={props.className}>
         <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between w-full">
-          <div className="header-row ">
+          <div className="header-row md:flex md:items-center md:justify-between md:w-full">
             <Link to="/">
               <Img src="images/logo.png" alt="car" width={70} height={70} />
             </Link>
