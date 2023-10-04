@@ -30,7 +30,7 @@ const ContactusPage: React.FC = () => {
                 className="text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[-0.50px] w-full"
                 size="txtRalewayBold24"
               >
-                Contact Us
+                Cвязаться с нами
               </Text>
               <div className="flex flex-col gap-8 items-start justify-start w-full">
                 <div className="flex flex-col gap-[31px] items-start justify-start w-full">
@@ -40,11 +40,11 @@ const ContactusPage: React.FC = () => {
                         className="text-black-900 text-lg tracking-[-0.50px] w-auto"
                         size="txtRalewayRomanSemiBold18"
                       >
-                        Your Name
+                        Ваше имя
                       </Text>
                       <Input
                         name="frame48096015"
-                        placeholder="Write your name here...."
+                        placeholder="Напишите здесь свое имя..."
                         className="font-rubik p-0 placeholder: sm:pr-5  text-left text-sm tracking-[-0.50px] w-full"
                         wrapClassName="border border-bluegray-100 border-solid pl-[18px] pr-[35px] py-5 w-full"
                         type="text"
@@ -55,11 +55,11 @@ const ContactusPage: React.FC = () => {
                         className="text-black-900 text-lg tracking-[-0.50px] w-auto"
                         size="txtRalewayRomanSemiBold18"
                       >
-                        Your Email
+                        Ваше электронной почты
                       </Text>
                       <Input
                         name="frame48096015_One"
-                        placeholder="Write your email here...."
+                        placeholder="Напишите здесь свое электронный адрес..."
                         className="font-rubik p-0 placeholder: sm:pr-5  text-left text-sm tracking-[-0.50px] w-full"
                         wrapClassName="border border-bluegray-100 border-solid pl-[18px] pr-[35px] py-5 w-full"
                         type="email"
@@ -71,12 +71,12 @@ const ContactusPage: React.FC = () => {
                       className="text-black-900 text-lg tracking-[-0.50px] w-full"
                       size="txtRalewayRomanSemiBold18"
                     >
-                      Your Comment
+                      Ваше комментарий
                     </Text>
                     <div className="border border-bluegray-100 border-solid flex flex-col font-rubik h-[218px] md:h-auto items-start justify-start p-4 w-full">
                       <textarea
                         name=""
-                        placeholder="Write your review here...."
+                        placeholder="Напишите здесь свое комментарий...."
                         style={{
                           width: "100%",
                           height: "100%",
@@ -90,7 +90,7 @@ const ContactusPage: React.FC = () => {
                 </div>
                 <div className="flex flex-col font-poppins items-start justify-start w-full">
                   <Button className="bg-bluegray-900 border-2 border-bluegray-900 border-solid cursor-pointer font-medium leading-[normal] min-w-[140px] py-[13px] text-base text-center text-white-A700 tracking-[-0.50px]">
-                    Send
+                    Отправлять
                   </Button>
                 </div>
               </div>

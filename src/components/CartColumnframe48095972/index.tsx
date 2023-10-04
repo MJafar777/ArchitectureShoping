@@ -4,7 +4,7 @@ import { Button, Img, Input, Text } from "components";
 
 type CartColumnframe48095972Props = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  "offer" | "description" | "subscribe"
+  "offer" | "description" | "Подписаться"
 > &
   Partial<{
     offer: string;
@@ -37,7 +37,7 @@ const CartColumnframe48095972: React.FC<CartColumnframe48095972Props> = (
             <div className="flex sm:flex-col flex-row gap-px items-start justify-start w-full">
               <Input
                 name="frame48095972"
-                placeholder="Your email here.."
+                placeholder="Ваш электронный адрес..."
                 className="font-rubik leading-[normal] p-0 placeholder:text-gray-500 sm:pr-5 text-gray-500 text-left text-lg tracking-[-0.50px] w-full"
                 wrapClassName="bg-white-A700 flex-1 sm:flex-1 pl-5 pr-[35px] py-[23px] w-[74%] sm:w-full"
               ></Input>
@@ -60,7 +60,7 @@ const CartColumnframe48095972: React.FC<CartColumnframe48095972Props> = (
 CartColumnframe48095972.defaultProps = {
   offer: "Подпишись сейчас",
   description: <></>,
-  subscribe: "Subscribe",
+  subscribe: "Подписаться",
 };
 
 export default CartColumnframe48095972;

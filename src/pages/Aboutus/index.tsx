@@ -135,16 +135,6 @@ const AboutusPage: React.FC = () => {
                 ))}
               </div>
             </div>
-            <PagerIndicator
-              className="flex gap-[15px] h-[15px] items-start justify-start w-[75px]"
-              count={3}
-              activeCss="inline-block cursor-pointer rounded-[50%] h-[15px] bg-bluegray-900 w-[15px]"
-              activeIndex={sliderState}
-              inactiveCss="inline-block cursor-pointer rounded-[50%] h-[15px] bg-gray-200 w-[15px]"
-              sliderRef={sliderRef}
-              selectedWrapperCss="inline-block"
-              unselectedWrapperCss="inline-block"
-            />
           </div>
         </div>
         <div className="h-[535px] md:h-[892px] md:px-5 relative w-full">
