@@ -1,10 +1,17 @@
 import React from "react";
 
 import { Button, Img, Text } from "components";
+import { Link } from "react-router-dom";
 
 type HomepageCardproductProps = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  "image" | "category" | "status" | "save" | "teakwoodchair" | "twentyfour"
+  | "image"
+  | "category"
+  | "status"
+  | "save"
+  | "teakwoodchair"
+  | "twentyfour"
+  | "link"
 > &
   Partial<{
     image: string;
@@ -13,11 +20,12 @@ type HomepageCardproductProps = Omit<
     save: string;
     teakwoodchair: string;
     twentyfour: string;
+    link: string;
   }>;
 
 const HomepageCardproduct: React.FC<HomepageCardproductProps> = (props) => {
   return (
-    <>
+    <Link to={`/room/${props.link}`}>
       <div className={props.className}>
         <div className="h-[400px] relative w-full">
           <Img
@@ -58,7 +66,7 @@ const HomepageCardproduct: React.FC<HomepageCardproductProps> = (props) => {
           </Text>
         </div> */}
       </div>
-    </>
+    </Link>
   );
 };
 
