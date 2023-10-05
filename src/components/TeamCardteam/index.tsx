@@ -29,7 +29,8 @@ const TeamCardteam: React.FC<TeamCardteamProps> = (props) => {
             <Img
               className="md:h-[450px] h-full m-auto object-cover w-full"
               alt="rectangle1487"
-              src="props?.rectangle1487"
+              // src="props?.rectangle1487"
+              src={"images/img_rectangle1487.png"}
             />
             <div className="absolute bottom-[5%] flex flex-row gap-[25px] inset-x-[0] items-center justify-center mx-auto w-auto">
               {!!props?.linkedin ? (
