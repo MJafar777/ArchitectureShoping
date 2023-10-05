@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 
 import {
-  ProductsCardsWrapper,
   Img,
   Btn,
   Cards,
@@ -9,6 +8,7 @@ import {
   ImgCard,
   CardsChild,
   Informations,
+  ProductsCardsWrapper,
 } from "./productsCardsStyle";
 import { Link } from "react-router-dom";
 
