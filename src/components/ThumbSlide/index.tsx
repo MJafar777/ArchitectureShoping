@@ -45,15 +45,14 @@ function ThumbnailsExample() {
 
   return (
     <div className="wrapper" style={{ width: "50%" }}>
-'
-'      <Splide
+      ' '{" "}
+      <Splide
         options={mainOptions}
         ref={mainRef}
         aria-labelledby="thumbnail-slider-example"
       >
         {renderSlides()}
       </Splide>
-
       <Splide
         options={thumbsOptions}
         ref={thumbsRef}

@@ -1,20 +1,21 @@
 
   {
+    "include": ["src"], 
+
     "compilerOptions": {
-      "outDir": "./dist/",
-      "baseUrl": "./src",
-      "useDefineForClassFields": true,
-      "esModuleInterop": false,
-      "sourceMap": true,
-      "noImplicitAny": false,
-      "module": "ESNext",
-      "target": "ES2015",
       "jsx": "react",
       "allowJs": true,
-      "moduleResolution": "node",
+      "sourceMap": true,
+      "baseUrl": "./src",
+      "module": "ESNext",
+      "target": "ES2015",
+      "outDir": "./dist/",
+      "skipLibCheck": true,
+      "noImplicitAny": false,
       "isolatedModules": true,
-      "allowSyntheticDefaultImports": true,
-      "skipLibCheck": true
-    },
-    "include": ["src"], 
+      "esModuleInterop": false,
+      "moduleResolution": "node",
+      "useDefineForClassFields": true,
+      "allowSyntheticDefaultImports": true
+    }
   }

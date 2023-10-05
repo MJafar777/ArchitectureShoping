@@ -1,10 +1,10 @@
 import React from "react";
 
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import { Button, Img, List, PagerIndicator, Slider, Text } from "components";
 import CartColumnframe48095972 from "components/CartColumnframe48095972";
-import CartNavbar from "components/CartNavbar";
+
 import CartSectionfooter from "components/CartSectionfooter";
 import HomepageCardproduct from "components/HomepageCardproduct";
 import Header from "components/Header";

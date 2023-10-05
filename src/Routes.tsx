@@ -10,6 +10,8 @@ const Contactus = React.lazy(() => import("pages/Contactus"));
 const ShopDetailDescriptionPage = React.lazy(
   () => import("pages/ShopDetailDescription")
 );
+// const InfoEachRoom = React.lazy(
+//   () => import("components/InfoEachRoom/InfoEachRoom"))
 const ProjectRoutes = () => {
   return (
     <React.Suspense fallback={<>Loading...</>}>
