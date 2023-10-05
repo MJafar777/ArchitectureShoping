@@ -1,6 +1,5 @@
-import { room11, room12, room13, room14, room15 } from "assets/room";
-import img from "../../assets/room/room11.jpg";
-import { useParams } from "react-router-dom";
+import { room21, room22, room23, room24, room25, room26 } from "assets/room";
+
 /**
  * Return an array with objects containing data of sample images.
  *
@@ -9,7 +8,8 @@ import { useParams } from "react-router-dom";
  *
  * @return An array with objects for sample images.
  */
-export function generateSlides(
+
+export function generateSlides1(
   length = 8,
   sig = 0
 ): Array<{ src: string; alt: string }> {
@@ -18,45 +18,44 @@ export function generateSlides(
     // let room1 = "room";
     if (index + 1 == 1) {
       return {
-        src: `${room11}`,
+        src: `${room21}`,
         alt: `Image ${index + 1}`,
       };
     } else if (index + 1 == 2) {
       return {
-        src: `${room12}`,
+        src: `${room22}`,
         alt: `Image ${index + 1}`,
       };
     } else if (index + 1 == 3) {
       return {
-        src: `${room13}`,
+        src: `${room23}`,
         alt: `Image ${index + 1}`,
       };
     } else if (index + 1 == 4) {
       return {
-        src: `${room14}`,
+        src: `${room24}`,
         alt: `Image ${index + 1}`,
       };
     } else if (index + 1 == 5) {
       return {
-        src: `${room15}`,
+        src: `${room25}`,
         alt: `Image ${index + 1}`,
       };
     } else if (index + 1 == 6) {
       return {
-        src: `${room11}`,
+        src: `${room26}`,
         alt: `Image ${index + 1}`,
       };
     } else if (index + 1 == 7) {
       return {
-        src: `${room12}`,
+        src: `${room21}`,
         alt: `Image ${index + 1}`,
       };
     } else {
       return {
-        src: `${room12}`,
+        src: `${room21}`,
         alt: `Image ${index + 1}`,
       };
     }
   });
-  
 }

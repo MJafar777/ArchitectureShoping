@@ -1,10 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import CartNavbar from "components/CartNavbar";
+import { Button, Input, Line, Text } from "components";
 import ThumbnailsExample from "components/ThumbSlide";
 import CartSectionfooter from "components/CartSectionfooter";
-import { Button, Img, Line, PagerIndicator, Text } from "components";
 import CartColumnframe48095972 from "components/CartColumnframe48095972";
 import {
   bicycle,
@@ -19,6 +18,7 @@ import {
   shoppingCart,
   toboggan,
 } from "assets/images";
+import Header from "components/Header";
 
 const ShopDetailDescriptionPage: React.FC = () => {
   const navigate = useNavigate();
@@ -30,8 +30,8 @@ const ShopDetailDescriptionPage: React.FC = () => {
   return (
     <>
       <div className="bg-gray-50 flex flex-col font-rubik sm:gap-10 md:gap-10 gap-[100px] items-start justify-start mx-auto w-auto sm:w-full md:w-full">
+        <Header className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[10px] w-full" />
         <div className="flex flex-col items-start justify-start w-full">
-          <CartNavbar className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[35px] w-full" />
           <div className="flex flex-col items-start justify-start pt-[75px] md:px-10 sm:px-5 px-[75px] w-full">
             <div className="flex md:flex-col flex-row gap-[47px] items-center justify-start max-w-[1290px] mx-auto w-full">
               <ThumbnailsExample />
@@ -144,22 +144,15 @@ const ShopDetailDescriptionPage: React.FC = () => {
                   безопасности, сопромонного аронтектурного облика, хорошей
                   ежологии и ДоСТУПНоСТИ ЦеНІ
                   <br />
-                  <br />
-                  Дрор жилого комплюкса - это защищенная территория, где воб
-                  продуманно для комфортной жизни. Созданы условия для занятий
-                  спортом, а ваши дети смогут играть в бовопасности, во дроро
-                  бо9 машин, благодаря онатеме ост-free zone. Машины, кроме
-                  пожарной и медицинской, не имеют доступк на территорию двора.
-                  Для автомюбилей жильцов совдоно споциальная
                 </>
               </Text>
             </div>
-            <div className="flex flex-1 flex-col gap-[21px] items-center justify-start w-full h-full">
-              <img src={descriptionImg} alt="" className="h-50 w-50" />
+            <div className="flex flex-1 flex-col gap-[21px] mt-24 items-center justify-start w-full h-full">
+              <img src={descriptionImg} alt="" className="h-50 w-50 " />
             </div>
           </div>
         </div>
-        <div className="flex flex-col font-raleway items-start justify-start md:px-10 sm:px-5 px-[75px] w-full">
+        {/* <div className="flex flex-col font-raleway items-start justify-start md:px-10 sm:px-5 px-[75px] w-full">
           <div className="flex flex-col gap-[43px] items-start justify-start max-w-[1290px] mx-auto w-full">
             <Text
               className="sm:text-4xl md:text-[38px] text-[40px] text-black-900 text-center tracking-[-0.50px] w-auto"
@@ -168,6 +161,80 @@ const ShopDetailDescriptionPage: React.FC = () => {
               Related Products
             </Text>
             <div className="flex flex-col font-rubik gap-[43px] items-center justify-start w-full"></div>
+          </div>
+        </div> */}
+        <div className="flex flex-col font-raleway items-start justify-start md:px-10 sm:px-5 px-[75px] w-full">
+          <div className="flex md:flex-col flex-row md:gap-10 gap-[71px] items-start justify-start max-w-[1291px] mx-auto w-full">
+            <div className="flex flex-1 flex-col gap-6 items-center justify-start w-full">
+              <Text
+                className="text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[-0.50px] w-full"
+                size="txtRalewayBold24"
+              >
+                Cвязаться с нами
+              </Text>
+              <div className="flex flex-col gap-8 items-start justify-start w-full">
+                <div className="flex flex-col gap-[31px] items-start justify-start w-full">
+                  <div className="flex md:flex-col flex-row gap-4 items-start justify-start w-full">
+                    <div className="flex flex-1 flex-col gap-[17px] items-start justify-start w-full">
+                      <Text
+                        className="text-black-900 text-lg tracking-[-0.50px] w-auto"
+                        size="txtRalewayRomanSemiBold18"
+                      >
+                        Ваше имя
+                      </Text>
+                      <Input
+                        name="frame48096015"
+                        placeholder="Напишите здесь свое имя..."
+                        className="font-rubik p-0 placeholder: sm:pr-5  text-left text-sm tracking-[-0.50px] w-full"
+                        wrapClassName="border border-bluegray-100 border-solid pl-[18px] pr-[35px] py-5 w-full"
+                        type="text"
+                      ></Input>
+                    </div>
+                    <div className="flex flex-1 flex-col gap-[17px] items-start justify-start w-full">
+                      <Text
+                        className="text-black-900 text-lg tracking-[-0.50px] w-auto"
+                        size="txtRalewayRomanSemiBold18"
+                      >
+                        Ваше электронной почты
+                      </Text>
+                      <Input
+                        name="frame48096015_One"
+                        placeholder="Напишите здесь свое электронный адрес..."
+                        className="font-rubik p-0 placeholder: sm:pr-5  text-left text-sm tracking-[-0.50px] w-full"
+                        wrapClassName="border border-bluegray-100 border-solid pl-[18px] pr-[35px] py-5 w-full"
+                        type="email"
+                      ></Input>
+                    </div>
+                  </div>
+                  <div className="flex flex-col gap-[17px] items-start justify-start w-full">
+                    <Text
+                      className="text-black-900 text-lg tracking-[-0.50px] w-full"
+                      size="txtRalewayRomanSemiBold18"
+                    >
+                      Ваше комментарий
+                    </Text>
+                    <div className="border border-bluegray-100 border-solid flex flex-col font-rubik h-[218px] md:h-auto items-start justify-start p-4 w-full">
+                      <textarea
+                        name=""
+                        placeholder="Напишите здесь свое комментарий...."
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          border: "none",
+                          resize: "none",
+                          backgroundColor: "#FEF9F4",
+                        }}
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col font-poppins items-start justify-start w-full">
+                  <Button className="bg-bluegray-900 border-2 border-bluegray-900 border-solid cursor-pointer font-medium leading-[normal] min-w-[140px] py-[13px] text-base text-center text-white-A700 tracking-[-0.50px]">
+                    Отправлять
+                  </Button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="flex flex-col font-rubik items-start justify-start md:px-10 sm:px-5 px-[75px] w-full">

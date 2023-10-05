@@ -3,10 +3,16 @@ import "@splidejs/react-splide/css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { Options } from "@splidejs/splide";
 import { generateSlides } from "./generateSlides";
+import { useParams } from "react-router-dom";
+import { generateSlides1 } from "./generateSlides1";
+import { generateSlides2 } from "./generateSlides2";
+import { generateSlides3 } from "./generateSlides3";
 
 function ThumbnailsExample() {
   const mainRef = useRef(null);
   const thumbsRef = useRef(null);
+  const params = useParams();
+  console.log(params.id, "fghjk");
 
   useEffect(() => {
     if (mainRef.current && thumbsRef.current && thumbsRef.current.splide) {
@@ -15,11 +21,36 @@ function ThumbnailsExample() {
   }, []);
 
   const renderSlides = () => {
-    return generateSlides().map((slide) => (
-      <SplideSlide key={slide.src}>
-        <img src={slide.src} alt={slide.alt} />
-      </SplideSlide>
-    ));
+    if (params.id == "1") {
+      return generateSlides().map((slide) => (
+        <SplideSlide key={slide.src}>
+          <img src={slide.src} alt={slide.alt} />
+        </SplideSlide>
+      ));
+    } else if (params.id == "2") {
+      return generateSlides1().map((slide) => (
+        <SplideSlide key={slide.src}>
+          <img src={slide.src} alt={slide.alt} />
+        </SplideSlide>
+      ));
+    } else if (params.id == "3") {
+      return generateSlides2().map((slide) => (
+        <SplideSlide key={slide.src}>
+          <img src={slide.src} alt={slide.alt} />
+        </SplideSlide>
+      ));
+    } else {
+      return generateSlides3().map((slide) => (
+        <SplideSlide key={slide.src}>
+          <img
+            className="w-100"
+            style={{ width: "700px" }}
+            src={slide.src}
+            alt={slide.alt}
+          />
+        </SplideSlide>
+      ));
+    }
   };
 
   const mainOptions: Options = {
@@ -45,8 +76,7 @@ function ThumbnailsExample() {
 
   return (
     <div className="wrapper" style={{ width: "50%" }}>
-'
-'      <Splide
+      <Splide
         options={mainOptions}
         ref={mainRef}
         aria-labelledby="thumbnail-slider-example"
