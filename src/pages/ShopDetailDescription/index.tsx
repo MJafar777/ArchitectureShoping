@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import CartNavbar from "components/CartNavbar";
 import ThumbnailsExample from "components/ThumbSlide";
 import CartSectionfooter from "components/CartSectionfooter";
 import { Button, Img, Line, PagerIndicator, Text } from "components";
@@ -19,6 +18,7 @@ import {
   shoppingCart,
   toboggan,
 } from "assets/images";
+import Header from "components/Header";
 
 const ShopDetailDescriptionPage: React.FC = () => {
   const navigate = useNavigate();
@@ -29,9 +29,10 @@ const ShopDetailDescriptionPage: React.FC = () => {
 
   return (
     <>
+      <Header className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[10px] w-full" />
+
       <div className="bg-gray-50 flex flex-col font-rubik sm:gap-10 md:gap-10 gap-[100px] items-start justify-start mx-auto w-auto sm:w-full md:w-full">
         <div className="flex flex-col items-start justify-start w-full">
-          <CartNavbar className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[35px] w-full" />
           <div className="flex flex-col items-start justify-start pt-[75px] md:px-10 sm:px-5 px-[75px] w-full">
             <div className="flex md:flex-col flex-row gap-[47px] items-center justify-start max-w-[1290px] mx-auto w-full">
               <ThumbnailsExample />
