@@ -14,19 +14,30 @@ import { Link } from "react-router-dom";
 
 interface Props {
   homepageCardproductPropList: {
+    kvm?: string;
     link?: string;
     save?: string;
-    status?: string;
     image?: string;
+    status?: string;
     category?: string;
-    teakwoodchair?: string;
     twentyfour?: string;
+    teakwoodchair?: string;
   }[];
 }
 const ProductsCards: FC<Props> = (props) => {
   const { homepageCardproductPropList } = props;
   return (
     <ProductsCardsWrapper>
+      <h2
+        style={{
+          fontSize: "36px",
+          textAlign: "center",
+          fontWeight: "500",
+          color: "rgb(0, 65, 52)",
+        }}
+      >
+        Квартиры
+      </h2>
       {homepageCardproductPropList.map((props) => {
         return (
           <Cards>
@@ -37,7 +48,7 @@ const ProductsCards: FC<Props> = (props) => {
                   <li>
                     <span>Общая площадь</span>
                     <span> ---------- </span>
-                    <span>38.78 m²</span>
+                    <span>{props.kvm} m²</span>
                   </li>
                   <li>
                     <span>Балкон</span>

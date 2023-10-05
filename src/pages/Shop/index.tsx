@@ -9,59 +9,32 @@ import { ProductsCards } from "components/ProductsCards";
 const ShopPage: React.FC = () => {
   const homepageCardproductPropList = [
     {
-      save: "images/products/5.png",
+      save: "images/products/1.jpg",
       status: "New",
-      image: "images/products/5.png",
-      category: "4x ",
-    },
-    {
-      image: "images/products/1.png",
-      category: "4x ",
-      teakwoodchair: "house building",
-      twentyfour: "$220.000",
-    },
-    {
-      image: "images/products/2.png",
+      image: "images/products/1.jpg",
       category: "2x ",
-      teakwoodchair: "house building",
-      twentyfour: "$330.000",
+      kvm: "75.20",
     },
     {
-      image: "images/products/3.png",
+      image: "images/products/2.jpg",
       category: "3x ",
       teakwoodchair: "house building",
-      twentyfour: "$260.000",
+      twentyfour: "$220.000",
+      kvm: "93.40",
     },
     {
-      image: "images/products/1.png",
-      category: "6x ",
-      teakwoodchair: "house building",
-      twentyfour: "$280.000",
-    },
-    {
-      image: "images/products/5.png",
-      category: "6x ",
-      teakwoodchair: "house building",
-      twentyfour: "$108.000",
-    },
-    {
-      image: "images/products/6.png",
-      category: "5x ",
-      teakwoodchair: "house building",
-      twentyfour: "$162.000",
-    },
-    {
-      image: "images/products/7.png",
+      image: "images/products/3.jpg",
       category: "4x ",
       teakwoodchair: "house building",
-      twentyfour: "$120.000",
+      twentyfour: "$330.000",
+      kvm: "115.40",
     },
-    {
-      image: "images/products/2.png",
-      category: "2x",
-      teakwoodchair: "house building",
-      twentyfour: "$189.000",
-    },
+    // {
+    //   image: "images/products/3.png",
+    //   category: "3x ",
+    //   teakwoodchair: "house building",
+    //   twentyfour: "$260.000",
+    // },
   ];
 
   return (
