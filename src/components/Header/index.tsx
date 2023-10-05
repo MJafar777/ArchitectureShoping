@@ -20,6 +20,12 @@ const Header: React.FC<HeaderProps> = (props) => {
           <div className="header-row ">
             <Link to="/">
               <Img src={logo} width={70} height={70} alt="car" />
+              {/* <Img
+                src="images/headerIcons/logo.png"
+                width={110}
+                height={110}
+                alt="car"
+              /> */}
             </Link>
             <div
               className="mobile-menu"
