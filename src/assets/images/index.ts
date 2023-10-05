@@ -13,3 +13,4 @@ export { default as shoppingCart } from "../images/icon/shopping-cart.png";
 export { default as securityCamera } from "../images/icon/security-camera.png";
 export { default as homeIcon } from "../images/icon/9035651_home_sharp_icon.png";
 export {default as descriptionImg} from './a3.jpg'
+export {default as logo} from './logo.png'
