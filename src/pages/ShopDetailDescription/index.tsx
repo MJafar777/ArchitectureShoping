@@ -1,48 +1,27 @@
 import React from "react";
-
 import { useNavigate } from "react-router-dom";
 
-import {
-  Button,
-  Img,
-  Input,
-  Line,
-  List,
-  PagerIndicator,
-  SelectBox,
-  Slider,
-  Text,
-} from "components";
-import CartColumnframe48095972 from "components/CartColumnframe48095972";
-import CartNavbar from "components/CartNavbar";
+import { Button, Input, Line, Text } from "components";
+import ThumbnailsExample from "components/ThumbSlide";
 import CartSectionfooter from "components/CartSectionfooter";
-import HomepageCardproduct from "components/HomepageCardproduct";
-import { fourRoom1 } from "assets/images";
-// import img from '../../assets/images/products/1.png'
-
-const homeOptionsList = [
-  { label: "Option1", value: "option1" },
-  { label: "Option2", value: "option2" },
-  { label: "Option3", value: "option3" },
-];
+import CartColumnframe48095972 from "components/CartColumnframe48095972";
+import {
+  bicycle,
+  descriptionImg,
+  dumbbell,
+  fountain,
+  homeIcon,
+  houseTree,
+  parking,
+  run,
+  securityCamera,
+  shoppingCart,
+  toboggan,
+} from "assets/images";
+import Header from "components/Header";
 
 const ShopDetailDescriptionPage: React.FC = () => {
   const navigate = useNavigate();
-
-  const homepageCardproductPropList = [
-    { image: "images/img_image_10.png" },
-    { image: "images/img_image_11.png" },
-    { image: "images/img_image_12.png" },
-    { image: "images/img_image_13.png" },
-  ];
-  const sliderRef = React.useRef(null);
-  const [sliderState, setsliderState] = React.useState(0);
-  const homepageCardproductPropList1 = [
-    { image: "images/img_image_10.png" },
-    { image: "images/img_image_11.png" },
-    { image: "images/img_image_12.png" },
-    { image: "images/img_image_13.png" },
-  ];
 
   function handleNavigate2() {
     window.location.href = "https://accounts.google.com/";
@@ -51,137 +30,82 @@ const ShopDetailDescriptionPage: React.FC = () => {
   return (
     <>
       <div className="bg-gray-50 flex flex-col font-rubik sm:gap-10 md:gap-10 gap-[100px] items-start justify-start mx-auto w-auto sm:w-full md:w-full">
+        <Header className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[10px] w-full" />
         <div className="flex flex-col items-start justify-start w-full">
-          <CartNavbar className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[35px] w-full" />
           <div className="flex flex-col items-start justify-start pt-[75px] md:px-10 sm:px-5 px-[75px] w-full">
             <div className="flex md:flex-col flex-row gap-[47px] items-center justify-start max-w-[1290px] mx-auto w-full">
-              <Img
-                className="flex-1 md:flex-none md:h-[595px] sm:h-auto h-full max-h-[595px] object-cover sm:w-[] md:w-[]"
-                src={`${fourRoom1}`}
-                alt="rectangle1475"
-              />
-              {/* <img src={`${img}`} alt="" /> */}
+              <ThumbnailsExample />
+
               <div className="flex flex-1 flex-col gap-[30px] items-start justify-start w-full">
                 <div className="flex flex-col gap-[33px] items-start justify-start w-full">
                   <Text
                     className="max-w-[621px] md:max-w-full md:text-3xl sm:text-[28px] text-[32px] text-black-900 tracking-[-0.50px]"
                     size="txtRalewayRomanBold32Black900"
                   >
-                    Complete set of sofa, pillows and bed sheets
+                    Что вы получаете с нами{" "}
                   </Text>
-                  <div className="flex flex-row font-rubik gap-[15px] items-center justify-start w-full">
-                    <Img
-                      className="h-5 w-[140px]"
-                      src="images/img_frame135.svg"
-                      alt="frame135"
-                    />
-                    <Text
-                      className="text-gray-500 text-sm tracking-[-0.50px] w-auto"
-                      size="txtRubikRegular14"
-                    >
-                      ( 1 review )
-                    </Text>
-                  </div>
-                  <Text
-                    className="text-4xl sm:text-[32px] md:text-[34px] text-bluegray-900 tracking-[-0.50px] w-full"
-                    size="txtRubikBold36"
-                  >
-                    $ 75.00
-                  </Text>
+
                   <div className="flex flex-col font-rubik gap-5 items-start justify-start w-full">
-                    <Text
-                      className="text-black-900 text-lg tracking-[-0.50px] w-full"
-                      size="txtRubikSemiBold18"
-                    >
-                      <span className="text-gray-500 font-rubik text-left font-normal">
-                        Stok :
-                      </span>
-                      <span className="text-black-900 font-rubik text-left font-normal">
-                        {" "}
-                        18
-                      </span>
-                    </Text>
-                    <Text
-                      className="text-black-900 text-lg tracking-[-0.50px] w-full"
-                      size="txtRubikSemiBold18"
-                    >
-                      <span className="text-gray-500 font-rubik text-left font-normal">
-                        SKU :
-                      </span>
-                      <span className="text-black-900 font-rubik text-left font-normal">
-                        {" "}
-                        BA65
-                      </span>
-                      <span className="text-black-900 font-rubik text-left font-semibold">
-                        {" "}
-                      </span>
-                    </Text>
-                    <Text
-                      className="text-black-900 text-lg tracking-[-0.50px] w-full"
-                      size="txtRubikSemiBold18"
-                    >
-                      <span className="text-gray-500 font-rubik text-left font-normal">
-                        Categories :
-                      </span>
-                      <span className="text-black-900 font-rubik text-left font-normal">
-                        {" "}
-                        Chair, New Arrivals, Special
-                      </span>
-                    </Text>
-                    <Text
-                      className="text-black-900 text-lg tracking-[-0.50px] w-full"
-                      size="txtRubikSemiBold18"
-                    >
-                      <span className="text-gray-500 font-rubik text-left font-normal">
-                        Tags :
-                      </span>
-                      <span className="text-black-900 font-rubik text-left font-normal">
-                        {" "}
-                        Black, Chair
-                      </span>
-                    </Text>
-                  </div>
-                  <Text
-                    className="leading-[35.00px] max-w-[621px] md:max-w-full text-gray-500 text-lg tracking-[-0.50px]"
-                    size="txtRubikRegular18Gray500"
-                  >
-                    In order to sit comfortably for long periods, people need
-                    freedom of movement. The Form rocking chair has a molded
-                    plastic shell with a wide, curved seat, which gives plenty
-                    of opportunity for changing one’s sitting position.
-                  </Text>
-                </div>
-                <div className="flex flex-col items-start justify-start w-full">
-                  <div className="flex flex-row gap-[19px] items-start justify-start w-[337px]">
-                    <div className="border border-black-900 border-solid flex flex-row gap-[15px] items-center justify-start p-2.5 w-[38%]">
-                      <Img
-                        className="common-pointer h-6 ml-1 w-6"
-                        src="images/img_google.svg"
-                        alt="google"
-                        onClick={handleNavigate2}
-                      />
-                      <Text
-                        className="text-black-900 text-lg tracking-[-0.50px]"
-                        size="txtRubikRegular18"
-                      >
-                        1
-                      </Text>
-                      <Img
-                        className="h-6 w-6"
-                        src="images/img_plus.svg"
-                        alt="plus"
-                      />
+                    <div className="flex items-center justify-start gap-6 ">
+                      <img src={homeIcon} alt="" className="w-8" />{" "}
+                      <p className="font-bold	">
+                        ЖИЛОЙ КОМПЛЕКС
+                        <span className="block font-light">
+                          Блок 'А" на 135 квартир
+                        </span>
+                        <span className="block font-light">
+                          Блок 'Б- на о6 квастно
+                        </span>
+                      </p>
                     </div>
-                    <Text
-                      className="common-pointer bg-black-900 flex-1 justify-center sm:pl-5 pl-[25px] pr-[13px] py-[11px] text-lg text-white-A700 tracking-[-0.50px] w-auto"
-                      size="txtRubikRegular18WhiteA700"
-                      onClick={() => navigate("/")}
-                    >
-                      Add to Cart
-                    </Text>
-                    <Button className="border border-bluegray-100 border-solid flex h-[43px] items-center justify-center p-3 w-[43px]">
-                      <Img src="images/img_favorite.svg" alt="favorite" />
-                    </Button>
+
+                    <div className="flex items-center justify-start gap-6 ">
+                      <img src={houseTree} alt="" className="w-8" />{" "}
+                      <p className="font-bold	">ЗЕЛЁНАЯ ПРИРОДА</p>
+                    </div>
+
+                    <div className="flex items-center justify-start gap-6 ">
+                      <img src={run} alt="" className="w-8" />{" "}
+                      <p className="font-bold	">БЕГОВАЯ ДОРОЖКА</p>
+                    </div>
+
+                    <div className="flex items-center justify-start gap-6 ">
+                      <img src={bicycle} alt="" className="w-8" />{" "}
+                      <p className="font-bold	"> ВЕЛОСИПЕДНАЯ ДОРОЖКА</p>
+                    </div>
+
+                    <div className="flex items-center justify-start gap-6 ">
+                      <img src={fountain} alt="" className="w-8" />{" "}
+                      <p className="font-bold	">Фонтан</p>
+                    </div>
+
+                    <div className="flex items-center justify-start gap-6 ">
+                      <img src={toboggan} alt="" className="w-8" />{" "}
+                      <p className="font-bold	">ДЕТСКАЯ ПЛОЩАДКА</p>
+                    </div>
+
+                    <div className="flex items-center justify-start gap-6 ">
+                      <img src={securityCamera} alt="" className="w-8" />{" "}
+                      <p className="font-bold	">
+                        КРУГЛОСУТОЧНОЕ СИСТЕМА ВИДЕОНАБЛЮДЕНИЕ И ОХРАНЯЕМЫЙ
+                        ЖИЛОЙ КОМПЛЕКС
+                      </p>
+                    </div>
+
+                    <div className="flex items-center justify-start gap-6 ">
+                      <img src={shoppingCart} alt="" className="w-8" />{" "}
+                      <p className="font-bold	">ТОРГОВЫЙ ЦЕНТР</p>
+                    </div>
+
+                    <div className="flex items-center justify-start gap-6 ">
+                      <img src={parking} alt="" className="w-8" />{" "}
+                      <p className="font-bold	">ПАРКОВКА</p>
+                    </div>
+
+                    <div className="flex items-center justify-start gap-6 ">
+                      <img src={dumbbell} alt="" className="w-8" />{" "}
+                      <p className="font-bold	">ТРЕНАЖЕРНЫЙ ЗАЛ</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -189,7 +113,7 @@ const ShopDetailDescriptionPage: React.FC = () => {
           </div>
         </div>
         <div className="flex flex-col font-poppins items-start justify-start md:px-10 sm:px-5 px-[75px] w-full">
-          <div className="flex md:flex-col flex-row gap-[49px] items-end justify-start max-w-[1290px] mx-auto w-full">
+          <div className="flex md:flex-col flex-row gap-[49px] items-start justify-start max-w-[1290px] mx-auto w-full">
             <div className="flex flex-1 flex-col gap-[42px] items-start justify-start w-full">
               <div className="flex flex-row font-josefinsans gap-[50px] items-start justify-start w-full">
                 <div className="flex flex-col gap-2 items-end justify-start w-auto">
@@ -197,143 +121,109 @@ const ShopDetailDescriptionPage: React.FC = () => {
                     className="text-2xl md:text-[22px] text-bluegray-900 sm:text-xl tracking-[-0.50px] w-auto"
                     size="txtJosefinSansRomanBold24"
                   >
-                    Description
+                    Описание
                   </Text>
                   <Line className="bg-bluegray-900 h-1.5 w-full" />
                 </div>
-                <Text
-                  className="common-pointer text-2xl md:text-[22px] text-gray-500 sm:text-xl tracking-[-0.50px] w-auto"
-                  size="txtJosefinSansRomanBold24Gray500"
-                  onClick={() => navigate("/detailreview")}
-                >
-                  Review
-                </Text>
               </div>
               <Text
                 className="leading-[35.00px] text-base text-gray-500 tracking-[-0.50px]"
                 size="txtRubikRegular16"
               >
                 <>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry&#39;s
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, <br />
+                  Совраанный мир диктуют свои правила жизни. Динамика больших
+                  городов и повоодновная озета делоют босценными простью ващи
+                  обыденные для провинциальных жителоя плоток чиотого овежего
+                  воддуха, способный воодушевить любого человека, красивые
+                  природные побасожи, дорящие ощущение счастья - ото то, чего
+                  ток но хокет жИТелиМ больших городов. <br />
                   <br />
-                  but also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software
-                  like Aldus PageMaker including versions of Lorem Ipsum
+                  Разрабатывая проект «7 Residences, ны стромились воплютить в
+                  нем вса потребности и мечты совроменных людей создать жилье
+                  нового типа, и сдолать возмоным сочетание: комфорта
+                  безопасности, сопромонного аронтектурного облика, хорошей
+                  ежологии и ДоСТУПНоСТИ ЦеНІ
+                  <br />
                 </>
               </Text>
             </div>
-            <div className="flex flex-1 flex-col gap-[21px] items-center justify-start w-full">
-              <div className="bg-gray-53 flex flex-col items-start justify-start md:px-10 sm:px-5 px-[43px] py-6 w-full">
-                <div className="flex sm:flex-col flex-row gap-[42px] items-start justify-start w-full">
-                  <div className="flex flex-1 flex-col gap-[23px] items-start justify-start w-full">
-                    <div className="flex flex-col gap-[31px] items-start justify-start w-full">
-                      <Text
-                        className="text-bluegray-900 text-lg tracking-[-0.50px] w-full"
-                        size="txtRubikRegular18Bluegray900"
-                      >
-                        Living Room
-                      </Text>
-                      <Text
-                        className="max-w-[313px] md:max-w-full text-4xl sm:text-[32px] md:text-[34px] text-black-900 tracking-[-0.50px]"
-                        size="txtRalewayBold36Black900"
-                      >
-                        The best foam padded chair
-                      </Text>
-                    </div>
-                    <Button className="border-2 border-bluegray-900 border-solid cursor-pointer font-medium leading-[normal] min-w-[155px] py-[13px] text-base text-bluegray-900 text-center tracking-[-0.50px]">
-                      Shop Now
-                    </Button>
-                  </div>
-                  <Img
-                    className="h-[301px] md:h-auto max-h-[301px] object-cover sm:w-[]"
-                    src="images/img_rectangle16.png"
-                    alt="sammoghadamkh"
-                  />
-                </div>
-              </div>
-              <PagerIndicator
-                className="flex h-[15px] justify-center w-[75px]"
-                count={3}
-                activeCss="inline-block cursor-pointer rounded-[50%] h-[15px] bg-bluegray-900 w-[15px]"
-                activeIndex={1}
-                inactiveCss="inline-block cursor-pointer rounded-[50%] h-[15px] bg-gray-200 w-[15px]"
-                selectedWrapperCss="inline-block md:ml-[0] mx-[7.50px] sm:ml-[0]"
-                unselectedWrapperCss="inline-block md:ml-[0] mx-[7.50px] sm:ml-[0]"
-              />
+            <div className="flex flex-1 flex-col gap-[21px] mt-24 items-center justify-start w-full h-full">
+              <img src={descriptionImg} alt="" className="h-50 w-50 " />
             </div>
           </div>
         </div>
-        <div className="flex flex-col font-raleway items-start justify-start md:px-10 sm:px-5 px-[75px] w-full">
-          <div className="flex flex-col gap-[43px] items-start justify-start max-w-[1290px] mx-auto w-full">
-            <Text
-              className="sm:text-4xl md:text-[38px] text-[40px] text-black-900 text-center tracking-[-0.50px] w-auto"
-              size="txtRalewayBold40"
-            >
-              Related Products
-            </Text>
-            <div className="flex flex-col font-rubik gap-[43px] items-center justify-start w-full">
-              {/* <Slider
-                autoPlay
-                autoPlayInterval={2000}
-                activeIndex={sliderState}
-                responsive={{
-                  0: { items: 1 },
-                  550: { items: 1 },
-                  1050: { items: 1 },
-                }}
-                onSlideChanged={(e) => {
-                  setsliderState(e?.item);
-                }}
-                ref={sliderRef}
-                className="w-full"
-                items={[...Array(3)].map(() => (
-                  <React.Fragment key={Math.random()}>
-                    <List
-                      className="sm:flex-col flex-row gap-[19px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 justify-center mx-2.5"
-                      orientation="horizontal"
+
+        <div className="flex flex-col font-raleway items-start justify-start md:px-10 sm:px-5 px-[75px] w-full ">
+          <div className="flex md:flex-col flex-row md:gap-10 gap-[71px] items-start justify-start max-w-[1291px] mx-auto w-full">
+            <div className="flex flex-1 flex-col gap-6 items-center justify-start w-full">
+              <Text
+                className="text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[-0.50px] w-full"
+                size="txtRalewayBold24"
+              >
+                Cвязаться с нами
+              </Text>
+              <div className="flex flex-col gap-8 items-start justify-start w-full">
+                <div className="flex flex-col gap-[31px] items-start justify-start w-full">
+                  <div className="flex md:flex-col flex-row gap-4 items-start justify-start w-full">
+                    <div className="flex flex-1 flex-col gap-[17px] items-start justify-start w-full">
+                      <Text
+                        className="text-black-900 text-lg tracking-[-0.50px] w-auto"
+                        size="txtRalewayRomanSemiBold18"
+                      >
+                        Ваше имя
+                      </Text>
+                      <Input
+                        name="frame48096015"
+                        placeholder="Напишите здесь свое имя..."
+                        className="font-rubik p-0 placeholder: sm:pr-5  text-left text-sm tracking-[-0.50px] w-full "
+                        wrapClassName="border border-black-900  border-solid border-2 pl-[18px] pr-[35px] py-5 w-full"
+                        type="text"
+                      ></Input>
+                    </div>
+                    <div className="flex flex-1 flex-col gap-[17px] items-start justify-start w-full">
+                      <Text
+                        className="text-black-900 text-lg tracking-[-0.50px] w-auto"
+                        size="txtRalewayRomanSemiBold18"
+                      >
+                        Ваше электронной почты
+                      </Text>
+                      <Input
+                        name="frame48096015_One"
+                        placeholder="Напишите здесь свое электронный адрес..."
+                        className="font-rubik p-0 placeholder: sm:pr-5  text-left text-sm tracking-[-0.50px] w-full"
+                        wrapClassName="border border-black-900 border-solid  border-2 pl-[18px] pr-[35px] py-5 w-full"
+                        type="email"
+                      ></Input>
+                    </div>
+                  </div>
+                  <div className="flex flex-col gap-[17px] items-start justify-start w-full">
+                    <Text
+                      className="text-black-900 text-lg tracking-[-0.50px] w-full"
+                      size="txtRalewayRomanSemiBold18"
                     >
-                      {homepageCardproductPropList1.map((props, index) => (
-                        <React.Fragment key={`HomepageCardproduct${index}`}>
-                          <HomepageCardproduct
-                            className="flex flex-col gap-4 items-start justify-start w-full"
-                            {...props}
-                          />
-                        </React.Fragment>
-                      ))}
-                    </List>
-                  </React.Fragment>
-                ))}
-                renderDotsItem={({ isActive }) => {
-                  if (isActive) {
-                    return (
-                      <div className="inline-block cursor-pointer rounded-[50%] h-[15px] bg-bluegray-900 w-[15px]" />
-                    );
-                  }
-                  return (
-                    <div
-                      className="inline-block cursor-pointer rounded-[50%] h-[15px] bg-gray-200 w-[15px]"
-                      role="button"
-                      tabIndex={0}
-                    />
-                  );
-                }}
-              /> */}
-              {/* <PagerIndicator
-                className="flex gap-[15px] h-[15px] items-start justify-center max-w-[1289px] w-full"
-                count={3}
-                activeCss="inline-block cursor-pointer rounded-[50%] h-[15px] bg-bluegray-900 w-[15px]"
-                activeIndex={sliderState}
-                inactiveCss="inline-block cursor-pointer rounded-[50%] h-[15px] bg-gray-200 w-[15px]"
-                sliderRef={sliderRef}
-                selectedWrapperCss="inline-block"
-                unselectedWrapperCss="inline-block"
-              /> */}
+                      Ваше комментарий
+                    </Text>
+                    <div className="border border-black-900  border-2 border-solid flex flex-col font-rubik h-[218px] md:h-auto items-start justify-start p-4 w-full">
+                      <textarea
+                        name=""
+                        placeholder="Напишите здесь свое комментарий...."
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          border: "none",
+                          resize: "none",
+                          backgroundColor: "#FEF9F4",
+                        }}
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col font-poppins items-start justify-start w-full">
+                  <Button className="bg-bluegray-900 border-2 border-black-900  border-solid cursor-pointer font-medium leading-[normal] min-w-[140px] py-[13px] text-base text-center text-white-A700 tracking-[-0.50px]">
+                    Отправлять
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

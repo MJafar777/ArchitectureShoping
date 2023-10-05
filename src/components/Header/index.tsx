@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-
-import { Img, SelectBox, Text } from "components";
 import { Link, NavLink } from "react-router-dom";
+
+import { logo } from "assets/images";
+import { Img, Text } from "components";
 
 type HeaderProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLDivElement>,
@@ -18,12 +19,7 @@ const Header: React.FC<HeaderProps> = (props) => {
         <div className=" flex md:block flex-row items-center justify-between w-full">
           <div className="header-row ">
             <Link to="/">
-              <Img
-                src="images/headerIcons/logo.png"
-                width={70}
-                height={70}
-                alt="car"
-              />
+              <Img src={logo} width={110} height={110} alt="logo" />
             </Link>
             <div
               className="mobile-menu"

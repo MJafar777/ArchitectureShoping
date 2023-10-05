@@ -46,7 +46,6 @@ const CartPage: React.FC = () => {
                           className="leading-[35.00px] max-w-[294px] md:max-w-full text-black-900 text-xl tracking-[-0.50px]"
                           size="txtRalewayRomanBold20"
                         >
-                          Complete set of sofa, pillows and bed sheets
                         </Text>
                         <Text
                           className="text-bluegray-900 text-xl tracking-[-0.50px] w-auto"

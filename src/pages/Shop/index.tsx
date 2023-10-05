@@ -4,77 +4,37 @@ import { Img, Text } from "components";
 import CartSectionfooter from "components/CartSectionfooter";
 import HomepageCardproduct from "components/HomepageCardproduct";
 import CartColumnframe48095972 from "components/CartColumnframe48095972";
+import { ProductsCards } from "components/ProductsCards";
 
 const ShopPage: React.FC = () => {
   const homepageCardproductPropList = [
-    { save: "images/products/5.png", status: "New" },
     {
-      image: "images/products/1.png",
-      category: "4x Rooms",
+      save: "images/products/1.jpg",
+      status: "New",
+      image: "images/products/1.jpg",
+      category: "2x ",
+      kvm: "75.20",
+    },
+    {
+      image: "images/products/2.jpg",
+      category: "3x ",
       teakwoodchair: "house building",
       twentyfour: "$220.000",
+      kvm: "93.40",
     },
     {
-      image: "images/products/2.png",
-      category: "4x Rooms",
+      image: "images/products/3.jpg",
+      category: "4x ",
       teakwoodchair: "house building",
       twentyfour: "$330.000",
+      kvm: "115.40",
     },
-
-    {
-      image: "images/products/second/Frame 13.png",
-    },
-    {
-      image: "images/products/second/Frame 14.png",
-    },
-    {
-      image: "images/products/second/Frame 15.png",
-    },
-    {
-      image: "images/products/3.png",
-      category: "2x Rooms",
-      teakwoodchair: "house building",
-      twentyfour: "$260.000",
-    },
-    {
-      image: "images/products/4.png",
-      category: "6x Rooms",
-      teakwoodchair: "house building",
-      twentyfour: "$280.000",
-    },
-    {
-      image: "images/products/5.png",
-      category: "Rooms building",
-      teakwoodchair: "house building",
-      twentyfour: "$108.000",
-    },
-    {
-      image: "images/products/second/Frame 16.png",
-    },
-    {
-      image: "images/products/second/Frame 17.png",
-    },
-    {
-      image: "images/products/second/Frame 18.png",
-    },
-    {
-      image: "images/products/6.png",
-      category: "Rooms building",
-      teakwoodchair: "house building",
-      twentyfour: "$162.000",
-    },
-    {
-      image: "images/products/7.png",
-      category: "Rooms building",
-      teakwoodchair: "house building",
-      twentyfour: "$120.000",
-    },
-    {
-      image: "images/products/2.png",
-      category: "Rooms building",
-      teakwoodchair: "house building",
-      twentyfour: "$189.000",
-    },
+    // {
+    //   image: "images/products/3.png",
+    //   category: "3x ",
+    //   teakwoodchair: "house building",
+    //   twentyfour: "$260.000",
+    // },
   ];
 
   return (
@@ -94,7 +54,7 @@ const ShopPage: React.FC = () => {
                 className="leading-[60.00px] w-full  text-4xl  text-white-A700 tracking-[-0.50px] text-center "
                 size="txtRalewayRomanBold36"
               >
-                Our Products
+                Наши продукты
               </Text>
             </div>
           </div>
@@ -105,15 +65,18 @@ const ShopPage: React.FC = () => {
         <div className="flex md:flex-col flex-row gap-5 items-start justify-start max-w-[1290px] mx-auto w-full">
           <div className="flex flex-1 flex-col font-rubik gap-[50px] items-center justify-start w-full">
             <div className="flex flex-col items-center justify-start w-full">
-              <div className="gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center min-h-[auto] w-full">
-                {homepageCardproductPropList.map((props, index) => (
+              <ProductsCards
+                homepageCardproductPropList={homepageCardproductPropList}
+              />
+              <div className="gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-1 justify-center min-h-[auto] w-full">
+                {/* {homepageCardproductPropList.map((props, index) => (
                   <React.Fragment key={`HomepageCardproduct${index}`}>
                     <HomepageCardproduct
                       className="flex flex-1 flex-col gap-4 items-start justify-start w-full"
                       {...props}
                     />
                   </React.Fragment>
-                ))}
+                ))} */}
               </div>
             </div>
           </div>
