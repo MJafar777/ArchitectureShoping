@@ -17,3 +17,10 @@ export { default as carWash } from "../images/icon/icons8-car-wash-48.png";
 export { default as shoppingCart } from "../images/icon/shopping-cart.png";
 export { default as securityCamera } from "../images/icon/security-camera.png";
 export { default as homeIcon } from "../images/icon/9035651_home_sharp_icon.png";
+
+// footer
+
+export { default as img_music } from "../images/footer/img_music.svg";
+export { default as img_camera } from "../images/footer/img_camera.svg";
+export { default as img_twitter } from "../images/footer/img_twitter.svg";
+export { default as img_facebook } from "../images/footer/img_facebook.svg";

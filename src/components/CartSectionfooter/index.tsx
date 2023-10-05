@@ -1,7 +1,13 @@
 import React from "react";
-
-import { Button, Img, Text } from "components";
 import { Link } from "react-router-dom";
+import { Button, Img, Text } from "components";
+
+import {
+  img_music,
+  img_camera,
+  img_twitter,
+  img_facebook,
+} from "assets/images";
 
 type CartSectionfooterProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLDivElement>,
@@ -29,6 +35,7 @@ const CartSectionfooter: React.FC<CartSectionfooterProps> = (props) => {
                 Для тех, кто любит комфорт и качество
               </Text>
             </div>
+
             <div className="flex flex-col gap-5 items-start justify-start w-[209px]">
               <Text
                 className="text-gray-53 text-xl tracking-[-0.50px] w-auto"
@@ -71,6 +78,7 @@ const CartSectionfooter: React.FC<CartSectionfooterProps> = (props) => {
                 </Link>
               </div>
             </div>
+
             <div className="flex flex-col gap-5 items-start justify-start w-[209px]">
               <Text
                 className="text-gray-53 text-xl tracking-[-0.50px] w-auto"
@@ -114,30 +122,22 @@ const CartSectionfooter: React.FC<CartSectionfooterProps> = (props) => {
               >
                 Подписывайтесь на нас
               </Text>
+
               <div className="flex flex-row gap-5 items-start justify-start w-auto">
                 <Button className="bg-yellow-100 flex h-10 items-center justify-center p-2 rounded-[50%] w-10">
-                  <Img
-                    className="h-6"
-                    src="images/img_camera.svg"
-                    alt="camera"
-                  />
+                  <Img className="h-6" src={img_camera} alt="camera" />
                 </Button>
+
                 <Button className="bg-yellow-100 flex h-10 items-center justify-center p-2 rounded-[50%] w-10">
-                  <Img
-                    className="h-6"
-                    src="images/img_facebook.svg"
-                    alt="facebook"
-                  />
+                  <Img className="h-6" src={img_facebook} alt="facebook" />
                 </Button>
+
                 <Button className="bg-yellow-100 flex h-10 items-center justify-center p-2 rounded-[50%] w-10">
-                  <Img
-                    className="h-6"
-                    src="images/img_twitter.svg"
-                    alt="twitter"
-                  />
+                  <Img className="h-6" src={img_twitter} alt="twitter" />
                 </Button>
+
                 <Button className="bg-yellow-100 flex h-10 items-center justify-center p-2 rounded-[50%] w-10">
-                  <Img className="h-6" src="images/img_music.svg" alt="music" />
+                  <Img className="h-6" src={img_music} alt="music" />
                 </Button>
               </div>
             </div>
