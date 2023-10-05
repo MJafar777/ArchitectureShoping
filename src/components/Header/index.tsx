@@ -109,7 +109,7 @@ const Header: React.FC<HeaderProps> = (props) => {
                 setBlockBurger(false);
               }}
             >
-              <Link to="/">Home</Link>
+              <Link to="/">Главная</Link>
             </Text>
 
             <Text
@@ -119,7 +119,7 @@ const Header: React.FC<HeaderProps> = (props) => {
                 setBlockBurger(false);
               }}
             >
-              <Link to="/products">Shop</Link>
+              <Link to="/products">Продукты</Link>
             </Text>
 
             <Text
@@ -129,7 +129,7 @@ const Header: React.FC<HeaderProps> = (props) => {
                 setBlockBurger(false);
               }}
             >
-              <Link to="/aboutus">About</Link>
+              <Link to="/aboutus">О нас</Link>
             </Text>
             <Text
               className="text-black-900 text-lg tracking-[-0.50px] w-auto"
@@ -138,7 +138,7 @@ const Header: React.FC<HeaderProps> = (props) => {
                 setBlockBurger(false);
               }}
             >
-              <Link to="/contactus">Contact </Link>
+              <Link to="/contactus">Контакты</Link>
             </Text>
           </div>
         </div>
