@@ -80,9 +80,9 @@ const HomepagePage: React.FC = () => {
               backgroundRepeat: "no-repeat",
               height: "85vh",
             }}
-            className="bg-orange-50 flex flex-col items-center  md:px-10 sm:px-5 px-[75px] py-20 w-full"
+            className="bg-orange-50 flex flex-col items-center md:px-10 sm:px-5 px-[75px] py-20 w-full"
           >
-            <div className="flex md:flex-col flex-row md:gap-10 gap-[60px] items-center  max-w-[1290px] mx-auto w-full">
+            <div className="flex md:flex-col flex-row md:gap-10 gap-[60px] items-center h-[600px]  max-w-[1290px] mx-auto w-full">
               <div
                 style={{
                   backgroundColor: "#00000074",
