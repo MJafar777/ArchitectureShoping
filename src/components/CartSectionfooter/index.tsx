@@ -13,7 +13,7 @@ const CartSectionfooter: React.FC<CartSectionfooterProps> = (props) => {
   return (
     <>
       <footer className={props.className}>
-        <div className="flex flex-col md:gap-10 gap-[149px] items-center justify-center w-full">
+        <div className="flex flex-col md:gap-10 gap-[59px] items-center justify-center w-full">
           <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between w-full">
             <div className="flex flex-col gap-4 items-start justify-start w-auto">
               <Text
@@ -106,6 +106,7 @@ const CartSectionfooter: React.FC<CartSectionfooterProps> = (props) => {
                 </Text>
               </div>
             </div>
+
             <div className="flex flex-col gap-5 items-start justify-start w-[220px]">
               <Text
                 className="text-gray-53 text-xl tracking-[-0.50px] w-auto"
@@ -141,27 +142,14 @@ const CartSectionfooter: React.FC<CartSectionfooterProps> = (props) => {
               </div>
             </div>
           </div>
-          <div className="flex sm:flex-col flex-row md:gap-10 items-start justify-between w-full">
+
+          <div className="flex sm:flex-col flex-row md:gap-10 items-start justify-center w-full">
             <Text
-              className="text-base text-gray-50_a3 tracking-[-0.50px] w-auto"
+              className="text-base text-gray-50_a3 tracking-[-0.50px] w-auto "
               size="txtRubikRomanRegular16"
             >
               © Copyright 2022. All Rights Reserved.
             </Text>
-            <div className="flex flex-row gap-[41px] items-start justify-start w-[272px]">
-              <Text
-                className="flex-1 text-base text-gray-50_a3 tracking-[-0.50px] w-auto"
-                size="txtRubikRomanRegular16"
-              >
-                Terms of condition
-              </Text>
-              <Text
-                className="text-base text-gray-50_a3 tracking-[-0.50px] w-auto"
-                size="txtRubikRomanRegular16"
-              >
-                Privacy Policy
-              </Text>
-            </div>
           </div>
         </div>
       </footer>

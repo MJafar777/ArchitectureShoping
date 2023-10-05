@@ -109,10 +109,24 @@ ul li a{
   justify-content: space-between;
   display: flex;
 }
-@media only screen and (min-width: 200px) and (max-width: 767px)  {
+@media only screen and (max-width: 1050px){
+  
+  .mobile-menu--items--response{
+    display: none;
+  }
   .mobile-menu {
     display: block;
   }
+  .parentDivHeader{
+    display: flex;
+    align-items:center;
+    justify-content: space-between ;
+  }
+ 
+}
+@media only screen and (min-width: 200px) and (max-width: 767px)  {
+  
+  
   .header-row{
     width: 100% !important;
   }

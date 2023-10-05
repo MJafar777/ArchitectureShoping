@@ -83,7 +83,6 @@ function ThumbnailsExample() {
       >
         {renderSlides()}
       </Splide>
-
       <Splide
         options={thumbsOptions}
         ref={thumbsRef}

@@ -78,7 +78,7 @@ const ShopPage: React.FC = () => {
   ];
 
   return (
-    <div className="bg-gray-50 flex flex-col font-rubik sm:gap-10 md:gap-10 gap-[100px] items-center justify-start mx-auto w-auto sm:w-full md:w-full">
+    <div className="bg-gray-50 flex flex-col font-rubik sm:gap-10 md:gap-10 gap-[30px] items-center justify-start mx-auto w-auto sm:w-full md:w-full">
       <Header className="bg-white-A700 flex items-center justify-center md:px-5 px-[75px] py-[10px] w-full" />
 
       <div className="flex flex-col font-poppins items-start justify-start md:px-10 sm:px-5 px-[75px] w-full">
@@ -94,17 +94,16 @@ const ShopPage: React.FC = () => {
                 className="leading-[60.00px] w-full  text-4xl  text-white-A700 tracking-[-0.50px] text-center "
                 size="txtRalewayRomanBold36"
               >
-                Our Products
+                Наши продукты
               </Text>
             </div>
           </div>
-        </div>
+        </div> 
       </div>
 
       <div className="flex flex-col font-raleway items-start justify-start md:px-10 sm:px-5 px-[75px] w-full">
         <div className="flex md:flex-col flex-row gap-5 items-start justify-start max-w-[1290px] mx-auto w-full">
           <div className="flex flex-1 flex-col font-rubik gap-[50px] items-center justify-start w-full">
-            {/* ////////// */}
             <div className="flex flex-col items-center justify-start w-full">
               <div className="gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center min-h-[auto] w-full">
                 {homepageCardproductPropList.map((props, index) => (
