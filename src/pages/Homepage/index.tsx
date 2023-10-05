@@ -7,6 +7,7 @@ import CartSectionfooter from "components/CartSectionfooter";
 import HomepageCardproduct from "components/HomepageCardproduct";
 import CartColumnframe48095972 from "components/CartColumnframe48095972";
 import { Button, Img, List, PagerIndicator, Slider, Text } from "components";
+import { sofa } from "assets/images";
 
 const HomepagePage: React.FC = () => {
   const navigate = useNavigate();
@@ -197,7 +198,7 @@ const HomepagePage: React.FC = () => {
                 size="txtRalewayBold40"
               >
                 <span className="text-black-900 font-raleway font-bold">
-                  Наш продукт
+                  Галерея{" "}
                 </span>
               </Text>
               <Text
@@ -285,18 +286,21 @@ const HomepagePage: React.FC = () => {
           </div>
         </div>
         <div className="h-[535px] md:h-[892px] md:px-5 relative w-full">
-          <div className="absolute bg-yellow-100 bottom-[0] h-[440px] inset-x-[0] mx-auto w-full"></div>
+          <div
+            style={{ background: "linear-gradient(135deg ,#273032,#274b53)" }}
+            className="absolute bottom-[0] h-[440px] inset-x-[0] mx-auto w-full"
+          ></div>
           <div className="absolute flex md:flex-col flex-row md:gap-10 h-full inset-y-[0] items-center justify-between max-w-[1365px] my-auto right-[0] w-full">
             <div className="flex sm:flex-1 flex-col gap-[30px] items-start justify-start w-[525px] sm:w-full">
               <div className="flex flex-col gap-[18px] items-start justify-start w-full">
                 <Text
-                  className="text-2xl md:text-[22px] text-bluegray-900 sm:text-xl tracking-[-0.50px] w-full ml-10"
+                  className="text-2xl text-gray-53 md:text-[22px]  sm:text-xl tracking-[-0.50px] w-full ml-10"
                   size="txtRubikRegular24"
                 >
                   Интерьер Модерн
                 </Text>
                 <Text
-                  className="leading-[60.00px] max-w-[525px] md:max-w-full sm:text-4xl md:text-[38px] text-[40px] text-black-900 tracking-[-0.50px] ml-10"
+                  className="leading-[60.00px] max-w-[525px] md:max-w-full sm:text-4xl md:text-[38px] text-[40px] text-gray-50	 tracking-[-0.50px] ml-10"
                   size="txtRalewayRomanBold40"
                 >
                   Обустройте свой дом таким образом с наших современных
@@ -304,13 +308,13 @@ const HomepagePage: React.FC = () => {
               </div>
             </div>
             <Img
-              className="sm:flex-1 h-[535px] md:h-auto object-cover w-[535px] sm:w-full"
-              src="images/img_insideweather.png"
+              className="sm:flex-1 h-[535px]  md:h-auto object-cover w-[650px] sm:w-full"
+              src={sofa}
               alt="insideweather"
             />
           </div>
         </div>
-        <div className="flex flex-col font-raleway items-center justify-start md:px-10 sm:px-5 px-[75px] w-full">
+        {/* <div className="flex flex-col font-raleway items-center justify-start md:px-10 sm:px-5 px-[75px] w-full">
           <div className="flex flex-col md:gap-10 gap-[67px] items-center justify-start max-w-[1290px] mx-auto w-full">
             <div className="flex flex-col font-rubik items-start justify-start w-full">
               <div className="md:gap-5 gap-[19px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center min-h-[auto] w-full">
@@ -326,7 +330,7 @@ const HomepagePage: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="flex flex-col font-raleway items-center justify-center md:px-10 sm:px-5 px-[75px] w-full">
           <div className="flex md:flex-col flex-row md:gap-10 gap-[85px] items-center justify-start max-w-[1290px] mx-auto w-full">
             <div className="flex flex-1 flex-col gap-[50px] h-full items-start justify-start w-full">

@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Button, Img, Input, Text } from "components";
+import { img_pexelsphotoby } from "assets/images";
 
 type CartColumnframe48095972Props = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
@@ -48,7 +49,7 @@ const CartColumnframe48095972: React.FC<CartColumnframe48095972Props> = (
           </div>
           <Img
             className="flex-1 md:flex-none md:h-[309px] sm:h-auto h-full max-h-[309px] object-cover sm:w-[] md:w-[]"
-            src="images/img_pexelsphotoby.png"
+            src={img_pexelsphotoby}
             alt="pexelsphotoby"
           />
         </div>

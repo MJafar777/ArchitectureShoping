@@ -76,7 +76,7 @@ const ShopDetailDescriptionPage: React.FC = () => {
 
                     <div className="flex items-center justify-start gap-6 ">
                       <img src={fountain} alt="" className="w-8" />{" "}
-                      <p className="font-bold	">фоНТАн</p>
+                      <p className="font-bold	">Фонтан</p>
                     </div>
 
                     <div className="flex items-center justify-start gap-6 ">
@@ -152,18 +152,8 @@ const ShopDetailDescriptionPage: React.FC = () => {
             </div>
           </div>
         </div>
-        {/* <div className="flex flex-col font-raleway items-start justify-start md:px-10 sm:px-5 px-[75px] w-full">
-          <div className="flex flex-col gap-[43px] items-start justify-start max-w-[1290px] mx-auto w-full">
-            <Text
-              className="sm:text-4xl md:text-[38px] text-[40px] text-black-900 text-center tracking-[-0.50px] w-auto"
-              size="txtRalewayBold40"
-            >
-              Related Products
-            </Text>
-            <div className="flex flex-col font-rubik gap-[43px] items-center justify-start w-full"></div>
-          </div>
-        </div> */}
-        <div className="flex flex-col font-raleway items-start justify-start md:px-10 sm:px-5 px-[75px] w-full">
+
+        <div className="flex flex-col font-raleway items-start justify-start md:px-10 sm:px-5 px-[75px] w-full ">
           <div className="flex md:flex-col flex-row md:gap-10 gap-[71px] items-start justify-start max-w-[1291px] mx-auto w-full">
             <div className="flex flex-1 flex-col gap-6 items-center justify-start w-full">
               <Text
@@ -185,8 +175,8 @@ const ShopDetailDescriptionPage: React.FC = () => {
                       <Input
                         name="frame48096015"
                         placeholder="Напишите здесь свое имя..."
-                        className="font-rubik p-0 placeholder: sm:pr-5  text-left text-sm tracking-[-0.50px] w-full"
-                        wrapClassName="border border-bluegray-100 border-solid pl-[18px] pr-[35px] py-5 w-full"
+                        className="font-rubik p-0 placeholder: sm:pr-5  text-left text-sm tracking-[-0.50px] w-full "
+                        wrapClassName="border border-black-900  border-solid border-2 pl-[18px] pr-[35px] py-5 w-full"
                         type="text"
                       ></Input>
                     </div>
@@ -201,7 +191,7 @@ const ShopDetailDescriptionPage: React.FC = () => {
                         name="frame48096015_One"
                         placeholder="Напишите здесь свое электронный адрес..."
                         className="font-rubik p-0 placeholder: sm:pr-5  text-left text-sm tracking-[-0.50px] w-full"
-                        wrapClassName="border border-bluegray-100 border-solid pl-[18px] pr-[35px] py-5 w-full"
+                        wrapClassName="border border-black-900 border-solid  border-2 pl-[18px] pr-[35px] py-5 w-full"
                         type="email"
                       ></Input>
                     </div>
@@ -213,7 +203,7 @@ const ShopDetailDescriptionPage: React.FC = () => {
                     >
                       Ваше комментарий
                     </Text>
-                    <div className="border border-bluegray-100 border-solid flex flex-col font-rubik h-[218px] md:h-auto items-start justify-start p-4 w-full">
+                    <div className="border border-black-900  border-2 border-solid flex flex-col font-rubik h-[218px] md:h-auto items-start justify-start p-4 w-full">
                       <textarea
                         name=""
                         placeholder="Напишите здесь свое комментарий...."
@@ -229,7 +219,7 @@ const ShopDetailDescriptionPage: React.FC = () => {
                   </div>
                 </div>
                 <div className="flex flex-col font-poppins items-start justify-start w-full">
-                  <Button className="bg-bluegray-900 border-2 border-bluegray-900 border-solid cursor-pointer font-medium leading-[normal] min-w-[140px] py-[13px] text-base text-center text-white-A700 tracking-[-0.50px]">
+                  <Button className="bg-bluegray-900 border-2 border-black-900  border-solid cursor-pointer font-medium leading-[normal] min-w-[140px] py-[13px] text-base text-center text-white-A700 tracking-[-0.50px]">
                     Отправлять
                   </Button>
                 </div>

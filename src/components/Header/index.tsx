@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-import { Img, Text } from "components";
 import { logo } from "assets/images";
+import { Img, Text } from "components";
 
 type HeaderProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLDivElement>,
