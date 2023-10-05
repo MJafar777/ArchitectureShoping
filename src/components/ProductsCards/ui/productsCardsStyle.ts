@@ -18,11 +18,20 @@ export const Cards = styled.div`
   );
 
   width: 100%;
-  height: 100%;
-  max-height: 500px;
 
   padding: 20px;
   margin: 20px auto;
+
+  @media only screen and (min-width: 770px) {
+    height: 100%;
+    max-height: 500px;
+  }
+  @media only screen and (max-width: 770px) {
+    padding: 0px;
+    max-height: auto;
+    height: 100%;
+    padding-bottom: 20px;
+  }
 `;
 
 export const CardsChild = styled.div`
@@ -31,6 +40,10 @@ export const CardsChild = styled.div`
   justify-content: space-between;
 
   margin: 20px auto;
+
+  @media only screen and (max-width: 770px) {
+    flex-direction: column;
+  }
 `;
 
 export const Informations = styled.div`
@@ -51,14 +64,53 @@ export const Informations = styled.div`
   ul {
     margin: 0 auto;
   }
+
+  @media only screen and (max-width: 820px) {
+    ul {
+      font-size: 14px;
+    }
+  }
+
+  @media only screen and (max-width: 770px) {
+    width: 90%;
+    margin: 20px auto;
+    order: 2;
+
+    ul {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+      justify-content: space-between;
+    }
+  }
+
+  @media only screen and (max-width: 723px) {
+    ul {
+      display: flex;
+      flex-direction: column;
+      li {
+        text-align: center;
+      }
+    }
+  }
 `;
 
 export const ImgCard = styled.div`
   width: 45%;
+  @media only screen and (max-width: 770px) {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 20px;
+  }
 `;
 
 export const Img = styled.img<PropsImage>`
   max-height: 300px;
+  @media only screen and (max-width: 770px) {
+    display: block;
+    margin: 0 auto;
+  }
 `;
 
 export const Title = styled.h3`

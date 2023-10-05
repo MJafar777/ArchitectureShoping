@@ -38,7 +38,7 @@ const ProductsCards: FC<Props> = (props) => {
       >
         Квартиры
       </h2>
-      {homepageCardproductPropList.map((props) => {
+      {homepageCardproductPropList.map((props, index) => {
         return (
           <Cards>
             <CardsChild>
@@ -79,7 +79,7 @@ const ProductsCards: FC<Props> = (props) => {
                 />
               </ImgCard>
             </CardsChild>
-            <Link to={`/room/${props.link}`}>
+            <Link to={`/room/${index + 1}`}>
               <Btn>Подробнее</Btn>
             </Link>
           </Cards>
