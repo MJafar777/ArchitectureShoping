@@ -23,22 +23,17 @@ type HomepageCardproductProps = Omit<
     teakwoodchair: string;
   }>;
 
-  
-
 const HomepageCardproduct: React.FC<HomepageCardproductProps> = (props) => {
-  
   return (
-    <Link to={`/room/${props.link}`}>
-      <div className={props.className}>
-        <div className="h-[400px] relative w-full">
-          <Img
-            className="absolute h-[400px] inset-[0] justify-center m-auto object-cover w-full"
-            alt="image"
-            src={`${props.image}`}
-          />
-        </div>
+    <div className={props.className}>
+      <div className="h-[400px] relative w-full">
+        <Img
+          className="absolute h-[400px] inset-[0] justify-center m-auto object-cover w-full"
+          alt="image"
+          src={`${props.image}`}
+        />
       </div>
-    </Link>
+    </div>
   );
 };
 
@@ -50,5 +45,3 @@ HomepageCardproduct.defaultProps = {
 };
 
 export default HomepageCardproduct;
-
-

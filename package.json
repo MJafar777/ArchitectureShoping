@@ -12,19 +12,8 @@
     "prop-types": "^15.8.1",
     "react-scripts": "5.0.0",
     "react-select": "^5.2.1",
-    "slick-carousel": "^1.8.1",
-    "react-router-dom": "^6.0.2",
-    "react-datepicker": "^4.5.0",
     "styled-components": "^6.0.8",
-    "@tailwindcss/forms": "0.4.0",
-    "@types/react-slick": "^0.23.10",
-    "react-alice-carousel": "^2.5.1",
-    "react-router-hash-link": "^2.4.3",
-    "@splidejs/react-splide": "^0.7.12",
-    "@testing-library/react": "^11.2.7",
-    "react-accessible-accordion": "^4.0.0",
-    "@testing-library/jest-dom": "^5.15.1",
-    "@testing-library/user-event": "^12.8.3"
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "test": "react-scripts test",

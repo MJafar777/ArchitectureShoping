@@ -1,29 +1,21 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 
-import { useNavigate } from "react-router-dom";
-
-import { Button, Img, List, PagerIndicator, Slider, Text } from "components";
-import CartColumnframe48095972 from "components/CartColumnframe48095972";
+import Header from "components/Header";
 
 import CartSectionfooter from "components/CartSectionfooter";
 import HomepageCardproduct from "components/HomepageCardproduct";
-import Header from "components/Header";
+import CartColumnframe48095972 from "components/CartColumnframe48095972";
+import { Button, Img, List, PagerIndicator, Slider, Text } from "components";
+import { sofa } from "assets/images";
 
 const HomepagePage: React.FC = () => {
   const navigate = useNavigate();
 
   const sliderRef = React.useRef(null);
+
   const [sliderState, setsliderState] = React.useState(0);
-  // const homepageCardproductPropList = [
-  //   { save: "images/products/img_save.svg" },
-  //   { image: "images/products/img_image_7.png" },
-  //   { image: "images/products/img_image_8.png" },
-  //   { image: "images/products/img_image_9.png" },
-  //   { image: "images/products/img_image_10.png" },
-  //   { image: "images/products/img_image_11.png" },
-  //   { image: "images/products/img_image_12.png" },
-  //   { image: "images/products/img_image_13.png" },
-  // ];
+
   const homepageCardproductPropList = [
     { save: "images/products/5.png", status: "New" },
     {
@@ -129,135 +121,72 @@ const HomepagePage: React.FC = () => {
           </div>
         </div>
 
-        <Slider
-          autoPlay
-          autoPlayInterval={2000}
-          activeIndex={sliderState}
-          responsive={{
-            0: { items: 1 },
-            550: { items: 1 },
-            1050: { items: 1 },
-          }}
-          onSlideChanged={(e) => {
-            setsliderState(e?.item);
-          }}
-          ref={sliderRef}
-          className="w-full"
-          items={[...Array(3)].map(() => (
-            <React.Fragment key={Math.random()}>
-              <List
-                className="flex flex-col gap-[47px] items-center mx-2.5"
-                orientation="vertical"
-              >
-                <div className="gap-[19px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 items-start justify-start w-full">
-                  <HomepageCardproduct
-                    className="flex flex-1 flex-col gap-4 items-start justify-start "
-                    image="images/home/twoRoom1.png"
-                    link="2"
-                  />
-                  <HomepageCardproduct
-                    className="flex flex-1 flex-col gap-4 items-start justify-start "
-                    image="images/home/threeRoom1.png"
-                    link="3"
-                  />
-
-                  <HomepageCardproduct
-                    className="flex flex-1 flex-col gap-4 items-start justify-start "
-                    image="images/home/fourRoom1.png"
-                    link="4"
-                  />
-                </div>
-              </List>
-            </React.Fragment>
-          ))}
-          renderDotsItem={({ isActive }) => {
-            if (isActive) {
-              return (
-                <div className="inline-block cursor-pointer rounded-[50%] h-[15px] bg-bluegray-900 w-[15px]" />
-              );
-            }
-            return (
-              <div
-                className="inline-block cursor-pointer rounded-[50%] h-[15px] bg-gray-200 w-[15px]"
-                role="button"
-                tabIndex={0}
-              />
-            );
-          }}
-        />
-
         <div className="flex flex-col items-center justify-center md:px-10 sm:px-5 px-[75px] w-full">
+          <div className="flex flex-col mb-12 gap-[13px] items-center justify-start w-full">
+            <Text
+              className="sm:text-4xl md:text-[38px] text-[40px] text-black-900 text-center tracking-[-0.50px] w-full"
+              size="txtRalewayBold40"
+            >
+              <span className="text-black-900 font-raleway font-bold">
+                Наш продукт
+              </span>
+            </Text>
+            <Text
+              className="text-center text-gray-500 text-lg tracking-[-0.50px] w-full"
+              size="txtRubikRegular18Gray500"
+            >
+              Изготовлен из лучших материалов и имеет дизайн, идущий в ногу со
+              временем.
+            </Text>
+          </div>
           <List
             className="sm:flex-col flex-row gap-5 grid md:grid-cols-1 grid-cols-2 justify-center max-w-[1290px] mx-auto w-full"
             orientation="horizontal"
           >
             <div className="bg-gradient  flex flex-1 flex-col items-start justify-start sm:px-5 px-[30px] py-6 w-full">
               <div className="flex sm:flex-col flex-row sm:gap-10 gap-[76px] items-center justify-start w-full">
-                <Img
-                  src="images/hasTwoRoom.jpg"
-                  alt="sammoghadamkh"
-                  style={{ width: "100%" }}
-                />
+                <Link to="/room/1">
+                  <Img
+                    src="images/hasTwoRoom.jpg"
+                    alt="sammoghadamkh"
+                    style={{ width: "100%" }}
+                  />
+                </Link>
               </div>
             </div>
             <div className="bg-gradient  flex flex-1 flex-col items-start justify-start sm:px-5 px-[30px] py-6 w-full">
               <div className="flex sm:flex-col flex-row sm:gap-10 gap-[76px] items-center justify-start w-full">
-                <Img
-                  src="images/hasThreeRoom.jpg"
-                  alt="sammoghadamkh"
-                  style={{ width: "100%" }}
-                />
+                <Link to="/room/2">
+                  <Img
+                    src="images/hasThreeRoom.jpg"
+                    alt="sammoghadamkh"
+                    style={{ width: "100%" }}
+                  />
+                </Link>
               </div>
             </div>
             <div className="bg-gradient  flex flex-1 flex-col items-start justify-start sm:px-5 px-[30px] py-6 w-full">
               <div className="flex sm:flex-col flex-row sm:gap-10 gap-[76px] items-center justify-start w-full">
-                <Img
-                  src="images/hasFourRoom.jpg"
-                  alt="sammoghadamkh"
-                  style={{ width: "100%" }}
-                />
+                <Link to="/room/3">
+                  <Img
+                    src="images/hasFourRoom.jpg"
+                    alt="sammoghadamkh"
+                    style={{ width: "100%" }}
+                  />
+                </Link>
               </div>
             </div>
             <div className="bg-gradient  flex flex-1 flex-col items-start justify-start sm:px-5 px-[30px] py-6 w-full">
               <div className="flex sm:flex-col flex-row sm:gap-10 gap-[76px] items-center justify-start w-full">
-                <Img
-                  src="images/hasAllRoom.jpg"
-                  alt="sammoghadamkh"
-                  style={{ width: "100%" }}
-                />
+                <Link to="/room/4">
+                  <Img
+                    src="images/hasAllRoom.jpg"
+                    alt="sammoghadamkh"
+                    style={{ width: "100%" }}
+                  />
+                </Link>
               </div>
             </div>
-            {/* <div className="bg-gradient  flex flex-1 flex-col items-center justify-center sm:px-5 px-[30px] py-6 w-full">
-              <div className="flex sm:flex-col flex-row sm:gap-10 gap-[79px] h-[301px] md:h-auto items-center justify-start w-full">
-                <div className="flex flex-1 flex-col gap-6 items-start justify-start w-full">
-                  <div className="flex flex-col gap-[31px] items-start justify-start w-full">
-                    <Text
-                      className="text-gray-53 text-lg tracking-[-0.50px] w-full"
-                      size="txtRubikRegular18Gray53"
-                    >
-                      Living Room
-                    </Text>
-                    <Text
-                      className="max-w-[306px] md:max-w-full text-4xl sm:text-[32px] md:text-[34px] text-gray-53 tracking-[-0.50px]"
-                      size="txtRalewayBold36"
-                    >
-                      Latest model chandelier
-                    </Text>
-                  </div>
-                  <Button
-                    className="common-pointer border-2 border-gray-50 border-solid cursor-pointer font-medium leading-[normal] min-w-[155px] py-[15px] text-base text-center text-gray-50 tracking-[-0.50px]"
-                    onClick={() => navigate("/products")}
-                  >
-                    Shop Now
-                  </Button>
-                </div>
-                <Img
-                  className="h-[244px] md:h-auto max-h-[244px] object-cover sm:w-[]"
-                  src="images/img_phildesforges.png"
-                  alt="phildesforges"
-                />
-              </div>
-            </div> */}
           </List>
         </div>
 
@@ -269,7 +198,7 @@ const HomepagePage: React.FC = () => {
                 size="txtRalewayBold40"
               >
                 <span className="text-black-900 font-raleway font-bold">
-                  Наш продукт
+                  Галерея{" "}
                 </span>
               </Text>
               <Text
@@ -357,18 +286,21 @@ const HomepagePage: React.FC = () => {
           </div>
         </div>
         <div className="h-[535px] md:h-[892px] md:px-5 relative w-full">
-          <div className="absolute bg-yellow-100 bottom-[0] h-[440px] inset-x-[0] mx-auto w-full"></div>
+          <div
+            style={{ background: "linear-gradient(135deg ,#273032,#274b53)" }}
+            className="absolute bottom-[0] h-[440px] inset-x-[0] mx-auto w-full"
+          ></div>
           <div className="absolute flex md:flex-col flex-row md:gap-10 h-full inset-y-[0] items-center justify-between max-w-[1365px] my-auto right-[0] w-full">
             <div className="flex sm:flex-1 flex-col gap-[30px] items-start justify-start w-[525px] sm:w-full">
               <div className="flex flex-col gap-[18px] items-start justify-start w-full">
                 <Text
-                  className="text-2xl md:text-[22px] text-bluegray-900 sm:text-xl tracking-[-0.50px] w-full ml-10"
+                  className="text-2xl text-gray-53 md:text-[22px]  sm:text-xl tracking-[-0.50px] w-full ml-10"
                   size="txtRubikRegular24"
                 >
                   Интерьер Модерн
                 </Text>
                 <Text
-                  className="leading-[60.00px] max-w-[525px] md:max-w-full sm:text-4xl md:text-[38px] text-[40px] text-black-900 tracking-[-0.50px] ml-10"
+                  className="leading-[60.00px] max-w-[525px] md:max-w-full sm:text-4xl md:text-[38px] text-[40px] text-gray-50	 tracking-[-0.50px] ml-10"
                   size="txtRalewayRomanBold40"
                 >
                   Обустройте свой дом таким образом с наших современных
@@ -376,13 +308,13 @@ const HomepagePage: React.FC = () => {
               </div>
             </div>
             <Img
-              className="sm:flex-1 h-[535px] md:h-auto object-cover w-[535px] sm:w-full"
-              src="images/img_insideweather.png"
+              className="sm:flex-1 h-[535px]  md:h-auto object-cover w-[650px] sm:w-full"
+              src={sofa}
               alt="insideweather"
             />
           </div>
         </div>
-        <div className="flex flex-col font-raleway items-center justify-start md:px-10 sm:px-5 px-[75px] w-full">
+        {/* <div className="flex flex-col font-raleway items-center justify-start md:px-10 sm:px-5 px-[75px] w-full">
           <div className="flex flex-col md:gap-10 gap-[67px] items-center justify-start max-w-[1290px] mx-auto w-full">
             <div className="flex flex-col font-rubik items-start justify-start w-full">
               <div className="md:gap-5 gap-[19px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center min-h-[auto] w-full">
@@ -398,7 +330,7 @@ const HomepagePage: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="flex flex-col font-raleway items-center justify-center md:px-10 sm:px-5 px-[75px] w-full">
           <div className="flex md:flex-col flex-row md:gap-10 gap-[85px] items-center justify-start max-w-[1290px] mx-auto w-full">
             <div className="flex flex-1 flex-col gap-[50px] h-full items-start justify-start w-full">
@@ -430,38 +362,6 @@ const HomepagePage: React.FC = () => {
             />
           </div>
         </div>
-        {/* <div className="flex flex-col items-center justify-center md:px-10 sm:px-5 px-[75px] w-full">
-          <div className="flex flex-col gap-[50px] items-center justify-start max-w-[1290px] mx-auto w-full">
-            <div className="flex flex-col gap-[13px] items-center justify-start w-full">
-              <Text
-                className="sm:text-4xl md:text-[38px] text-[40px] text-black-900 text-center tracking-[-0.50px] w-full"
-                size="txtRalewaySemiBold40"
-              >
-                Read Our Latest Blog
-              </Text>
-              <Text
-                className="text-center text-gray-500 text-lg tracking-[-0.50px] w-full"
-                size="txtRubikRegular18Gray500"
-              >
-                We write various things related to furniture, from tips and what
-                things I need to pay attention to when choosing furniture
-              </Text>
-            </div>
-            <List
-              className="sm:flex-col flex-row gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-start w-full"
-              orientation="horizontal"
-            >
-              {homepageCardblogPropList.map((props, index) => (
-                <React.Fragment key={`HomepageCardblog${index}`}>
-                  <HomepageCardblog
-                    className="flex flex-1 flex-col gap-2 items-start justify-start w-full"
-                    {...props}
-                  />
-                </React.Fragment>
-              ))}
-            </List>
-          </div>
-        </div> */}
         <div className="flex flex-col font-rubik items-start justify-start md:px-10 sm:px-5 px-[75px] w-full">
           <CartColumnframe48095972 className="bg-gradient  flex flex-col gap-2 items-start justify-start max-w-[1290px] mx-auto pl-[59px] md:px-5 py-[46px] w-full" />
         </div>
