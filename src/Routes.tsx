@@ -5,6 +5,8 @@ const Shop = React.lazy(() => import("pages/Shop"));
 const Aboutus = React.lazy(() => import("pages/Aboutus"));
 const Homepage = React.lazy(() => import("pages/Homepage"));
 const Contactus = React.lazy(() => import("pages/Contactus"));
+// const InfoEachRoom = React.lazy(() => import("components/InfoEachRoom/InfoEachRoom");
+
 const ShopDetailDescriptionPage = React.lazy(
   () => import("pages/ShopDetailDescription")
 );
