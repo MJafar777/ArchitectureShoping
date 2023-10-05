@@ -20,8 +20,8 @@ const Header: React.FC<HeaderProps> = (props) => {
             <Link to="/">
               <Img
                 src="images/headerIcons/logo.png"
-                width={70}
-                height={70}
+                width={110}
+                height={110}
                 alt="car"
               />
             </Link>
